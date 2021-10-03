@@ -423,14 +423,14 @@ textarea {
 ============= */
 #body grid-picture {
   /* Frame */
-  position: absolute;
+  position: relative;
   width: 1275.04px;
   height: 1086.37px;
   left: 82px;
   top: 1470px;
 }
 #body grid {
-  display: flexbox;
+  display: flex;
   width: 5100px;
   justify-content: space-between;
 }
