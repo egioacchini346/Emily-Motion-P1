@@ -428,7 +428,7 @@ textarea {
   left: 82px;
   top: 1470px;
 }
-#body grid {
+#body grid-container {
   display: grid;
   width: 5100px;
   justify-content: space-between;
