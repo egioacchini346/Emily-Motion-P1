@@ -429,3 +429,7 @@ textarea {
   left: 82px;
   top: 1470px;
 }
+#body grid {
+  display: flex;
+  justify-content: space-between;
+}
