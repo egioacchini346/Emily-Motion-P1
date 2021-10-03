@@ -430,7 +430,7 @@ textarea {
   top: 1470px;
 }
 #body grid {
-  display: flex;
+  display: flexbox;
   width: 5100px;
   justify-content: space-between;
 }
