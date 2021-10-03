@@ -431,5 +431,6 @@ textarea {
 }
 #body grid {
   display: flex;
+  width: 5100px;
   justify-content: space-between;
 }
