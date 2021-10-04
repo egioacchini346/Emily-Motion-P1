@@ -151,15 +151,18 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/body\/video_game_controller_icon.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/body\/video_game_controller_icon.svg",
+    "\/deploy\/img\/body\/video_game_controller_icon.png" : {
+      "ft" : 32768,
+      "iS" : 1140,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/body\/video_game_controller_icon.png",
       "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/body\/video_games_camp_image.jpg" : {
       "ft" : 16384,
@@ -230,6 +233,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero\/hero.jpg" : {
+      "ft" : 16384,
+      "iS" : 324137,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/hero.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/map_pin_icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -265,6 +281,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/before-body.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/body-buttons.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/body-buttons.html",
       "oF" : 0
     },
     "\/dev\/content\/body.kit" : {
@@ -475,6 +499,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_before-body.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_body-buttons.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_body-buttons.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
