@@ -63,15 +63,18 @@
 
                 div {
                     body {
-                        /* Sun Icon */
+                        img {
+                            /* Sun Icon */
 
-                        display: block;
-                        position: absolute;
-                        width: 74.27px;
-                        height: 74.27px;
-                        left: 277.81px;
-                        top: 1832.24px;
-                        color: white;
+                            display: block;
+                            position: absolute;
+                            width: 74.27px;
+                            height: 74.27px;
+                            left: 277.81px;
+                            top: 1832.24px;
+                            color: white;
+                        }
+
                     }
 
                     #n1 {
@@ -118,14 +121,16 @@
 
                 div {
                     body {
-                        /* Jedi Icon */
-                        display: block;
-                        position: absolute;
-                        width: 75.28px;
-                        height: 76.15px;
-                        left: 680.6px;
-                        top: 1830.36px;
-                        color: white;
+                        img {
+
+                            /* Jedi Icon */
+                            display: block;
+                            position: absolute;
+                            left: 680.6px;
+                            top: 1830.36px;
+                            color: white;
+                        }
+
                     }
 
 
