@@ -802,7 +802,7 @@ header > div #li3 {
     grid-area: s3;
   }
 }
-#body > div ul #s3 div body {
+#body > div ul #s3 div body a {
   /* Lightning Bolt Icon */
   display: block;
   position: absolute;
@@ -841,7 +841,7 @@ header > div #li3 {
     grid-area: s4;
   }
 }
-#body > div ul #s4 div body {
+#body > div ul #s4 div body img {
   /* Hand Sign Icon */
   display: block;
   position: absolute;
@@ -880,7 +880,7 @@ header > div #li3 {
     grid-area: s5;
   }
 }
-#body > div ul #s5 div body {
+#body > div ul #s5 div body img {
   /* Video Game Controller Icon */
   display: block;
   position: absolute;
@@ -919,7 +919,7 @@ header > div #li3 {
     grid-area: s6;
   }
 }
-#body > div ul #s6 div body {
+#body > div ul #s6 div body img {
   /* Shark Icon */
   display: block;
   position: absolute;
@@ -929,7 +929,7 @@ header > div #li3 {
   top: 2283.62px;
   color: white;
 }
-#body > div ul #s6 div #n6 {
+#body > div ul #s6 #n6 {
   /* SHARK TANK CAMP */
   position: absolute;
   width: 247px;
@@ -944,7 +944,7 @@ header > div #li3 {
   text-align: center;
   color: #FFFFFF;
 }
-#body > div ul #s6 img {
+#body > div ul img {
   /* Shark Tank Camp Image */
   position: absolute;
   width: 336.77px;
@@ -954,7 +954,7 @@ header > div #li3 {
   background-image: url(18CAMP_MakerSpace_9659-Edit.jpg);
 }
 @media (min-width: 768px) {
-  #body > div ul {
+  #body > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "s1 s2 s3" "s4 s5 s6";
@@ -962,7 +962,7 @@ header > div #li3 {
   }
 }
 @media (min-width: 992px) {
-  #body > div ul {
+  #body > div {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "s1 s2 s3" "s4 s5 s6";
   }

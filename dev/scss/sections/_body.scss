@@ -175,14 +175,16 @@
 
                 div {
                     body {
-                        /* Lightning Bolt Icon */
-                        display: block;
-                        position: absolute;
-                        width: 47.8px;
-                        height: 76.5px;
-                        left: 1099.16px;
-                        top: 1830.02px;
-                        color: white;
+                        a {
+                            /* Lightning Bolt Icon */
+                            display: block;
+                            position: absolute;
+                            width: 47.8px;
+                            height: 76.5px;
+                            left: 1099.16px;
+                            top: 1830.02px;
+                            color: white;
+                        }
                     }
 
                     #n3 {
@@ -230,15 +232,17 @@
                 }
 
                 div {
-                     body {
-                        /* Hand Sign Icon */
-                        display: block;
-                        position: absolute;
-                        width: 49.73px;
-                        height: 74.3px;
-                        left: 290.12px;
-                        top: 2267.73px;
-                        color: white;
+                    body {
+                        img {
+                            /* Hand Sign Icon */
+                            display: block;
+                            position: absolute;
+                            width: 49.73px;
+                            height: 74.3px;
+                            left: 290.12px;
+                            top: 2267.73px;
+                            color: white;
+                        }
                     }
 
                     #n4 {
@@ -288,14 +292,17 @@
                 div {
 
                     body {
-                        /* Video Game Controller Icon */
-                        display: block;
-                        position: absolute;
-                        width: 74.33px;
-                        height: 49.22px;
-                        left: 681px;
-                        top: 2284px;
-                        color: white;
+                        img {
+                            /* Video Game Controller Icon */
+                            display: block;
+                            position: absolute;
+                            width: 74.33px;
+                            height: 49.22px;
+                            left: 681px;
+                            top: 2284px;
+                            color: white;
+                        }
+
                     }
 
                     #n5 {
@@ -344,69 +351,71 @@
 
                 div {
                     body {
-                        /* Shark Icon */
-                        display: block;
-                        position: absolute;
-                        width: 127.52px;
-                        height: 52.05px;
-                        left: 1059.34px;
-                        top: 2283.62px;
-                        color: white;
-                    }
-
-                    #n6 {
-                        /* SHARK TANK CAMP */
-
-
-                        position: absolute;
-                        width: 247px;
-                        height: 56px;
-                        left: 999px;
-                        top: 2384px;
-
-                        font-family: Raleway;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 24px;
-                        line-height: 28px;
-                        text-align: center;
-
-                        color: #FFFFFF;
-
+                        img {
+                            /* Shark Icon */
+                            display: block;
+                            position: absolute;
+                            width: 127.52px;
+                            height: 52.05px;
+                            left: 1059.34px;
+                            top: 2283.62px;
+                            color: white;
+                        }
                     }
                 }
 
-
-                img {
-                    /* Shark Tank Camp Image */
+                #n6 {
+                    /* SHARK TANK CAMP */
 
 
                     position: absolute;
-                    width: 336.77px;
-                    height: 370.93px;
-                    left: 954.81px;
-                    top: 2184.93px;
-                    background-image: url(18CAMP_MakerSpace_9659-Edit.jpg);
+                    width: 247px;
+                    height: 56px;
+                    left: 999px;
+                    top: 2384px;
+
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+
                 }
             }
 
 
-            @include md {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-areas:
-                    "s1 s2 s3"
-                    "s4 s5 s6";
-                gap: 16px;
-            }
+            img {
+                /* Shark Tank Camp Image */
 
-            @include lg {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-areas:
-                    "s1 s2 s3"
-                    "s4 s5 s6";
-            }
 
+                position: absolute;
+                width: 336.77px;
+                height: 370.93px;
+                left: 954.81px;
+                top: 2184.93px;
+                background-image: url(18CAMP_MakerSpace_9659-Edit.jpg);
+            }
         }
+
+
+        @include md {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "s1 s2 s3"
+                "s4 s5 s6";
+            gap: 16px;
+        }
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "s1 s2 s3"
+                "s4 s5 s6";
+        }
+
     }
 }
