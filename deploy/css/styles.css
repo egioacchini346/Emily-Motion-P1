@@ -723,7 +723,7 @@ header > div #li3 {
     grid-area: s1;
   }
 }
-#body > div ul #s1 div a {
+#body > div ul #s1 div body {
   /* Sun Icon */
   display: block;
   position: absolute;
@@ -763,7 +763,7 @@ header > div #li3 {
     grid-area: s2;
   }
 }
-#body > div ul #s2 div a {
+#body > div ul #s2 div body {
   /* Jedi Icon */
   display: block;
   position: absolute;
@@ -802,7 +802,7 @@ header > div #li3 {
     grid-area: s3;
   }
 }
-#body > div ul #s3 div a {
+#body > div ul #s3 div body {
   /* Lightning Bolt Icon */
   display: block;
   position: absolute;
@@ -841,7 +841,7 @@ header > div #li3 {
     grid-area: s4;
   }
 }
-#body > div ul #s4 div a {
+#body > div ul #s4 body a {
   /* Hand Sign Icon */
   display: block;
   position: absolute;
@@ -851,7 +851,7 @@ header > div #li3 {
   top: 2267.73px;
   color: white;
 }
-#body > div ul #s4 div #n4 {
+#body > div ul #s4 body #n4 {
   /* HUNGER GAMES CAMP */
   position: absolute;
   width: 247px;
@@ -880,7 +880,7 @@ header > div #li3 {
     grid-area: s5;
   }
 }
-#body > div ul #s5 div a {
+#body > div ul #s5 div body {
   /* Video Game Controller Icon */
   display: block;
   position: absolute;
