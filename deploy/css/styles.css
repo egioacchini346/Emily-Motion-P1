@@ -681,9 +681,6 @@ header > div #li3 {
 #body {
   padding-bottom: 10px;
 }
-#body .center {
-  display: block;
-}
 #body .grid-container {
   display: grid;
   width: 5100px;
