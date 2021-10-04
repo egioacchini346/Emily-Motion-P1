@@ -433,3 +433,33 @@ textarea {
   width: 5100px;
   grid-template-areas: "s1 s1 s2 s2" "s3 s3 s4 s4" ". s5 s5 .";
 }
+@media (min-width: 768px) {
+  #body ul #s1 {
+    grid-area: s1;
+  }
+}
+@media (min-width: 768px) {
+  #body ul #s2 {
+    grid-area: s2;
+  }
+}
+@media (min-width: 768px) {
+  #body ul #s3 {
+    grid-area: s3;
+  }
+}
+@media (min-width: 768px) {
+  #body ul #s4 {
+    grid-area: s4;
+  }
+}
+@media (min-width: 768px) {
+  #body ul #s5 {
+    grid-area: s5;
+  }
+}
+@media (min-width: 768px) {
+  #body ul #s6 {
+    grid-area: s5;
+  }
+}
