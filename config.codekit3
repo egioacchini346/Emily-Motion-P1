@@ -151,18 +151,15 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/body\/video_game_controller_icon.png" : {
-      "ft" : 32768,
-      "iS" : 1140,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/body\/video_game_controller_icon.png",
+    "\/deploy\/img\/body\/video_game_controller_icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/body\/video_game_controller_icon.svg",
       "oF" : 0,
-      "oIPL" : 0,
       "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/body\/video_games_camp_image.jpg" : {
       "ft" : 16384,
@@ -226,19 +223,6 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero\/hero-image.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/hero\/hero.jpg" : {
-      "ft" : 16384,
-      "iS" : 324137,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero\/hero.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -592,17 +576,6 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/node_modules\/gsap\/gsap-core-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/node_modules\/gsap\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/node_modules\/gsap\/index-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0

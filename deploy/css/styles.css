@@ -723,7 +723,7 @@ header > div #li3 {
     grid-area: s1;
   }
 }
-#body > div ul #s1 a {
+#body > div ul #s1 div a {
   /* Sun Icon */
   display: block;
   position: absolute;
@@ -733,7 +733,7 @@ header > div #li3 {
   top: 1832.24px;
   color: white;
 }
-#body > div ul #s1 #n1 {
+#body > div ul #s1 div #n1 {
   /* SUMMERTIME FUN CAMP */
   display: inline-block;
   position: absolute;
@@ -756,14 +756,14 @@ header > div #li3 {
   height: 370.58px;
   left: 143.07px;
   top: 1744.93px;
-  background: url(Kids-Camps_Header_2000x1000.jpg);
+  background-image: url(Kids-Camps_Header_2000x1000.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s2 {
     grid-area: s2;
   }
 }
-#body > div ul #s2 a {
+#body > div ul #s2 div a {
   /* Jedi Icon */
   display: block;
   position: absolute;
@@ -773,7 +773,7 @@ header > div #li3 {
   top: 1830.36px;
   color: white;
 }
-#body > div ul #s2 #n2 {
+#body > div ul #s2 div #n2 {
   /* STAR WARS CAMP */
   position: absolute;
   width: 247px;
@@ -795,14 +795,14 @@ header > div #li3 {
   height: 370.58px;
   left: 550.07px;
   top: 1744.93px;
-  background: url(maxresdefault.jpg);
+  background-image: url(maxresdefault.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s3 {
     grid-area: s3;
   }
 }
-#body > div ul #s3 a {
+#body > div ul #s3 div a {
   /* Lightning Bolt Icon */
   display: block;
   position: absolute;
@@ -812,7 +812,7 @@ header > div #li3 {
   top: 1830.02px;
   color: white;
 }
-#body > div ul #s3 #n3 {
+#body > div ul #s3 div #n3 {
   /* WIZARDING GAMES CAMP */
   position: absolute;
   width: 247px;
@@ -834,14 +834,14 @@ header > div #li3 {
   height: 370.58px;
   left: 954.81px;
   top: 1744.93px;
-  background: url(large_list138050_34652.jpg);
+  background-image: url(large_list138050_34652.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s4 {
     grid-area: s4;
   }
 }
-#body > div ul #s4 a {
+#body > div ul #s4 div a {
   /* Hand Sign Icon */
   display: block;
   position: absolute;
@@ -851,7 +851,7 @@ header > div #li3 {
   top: 2267.73px;
   color: white;
 }
-#body > div ul #s4 #n4 {
+#body > div ul #s4 div #n4 {
   /* HUNGER GAMES CAMP */
   position: absolute;
   width: 247px;
@@ -873,14 +873,14 @@ header > div #li3 {
   height: 370.93px;
   left: 144.07px;
   top: 2185.93px;
-  background: url(hungergamesfeature.jpg);
+  background-image: url(hungergamesfeature.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s5 {
     grid-area: s5;
   }
 }
-#body > div ul #s5 a {
+#body > div ul #s5 div a {
   /* Video Game Controller Icon */
   display: block;
   position: absolute;
@@ -890,7 +890,7 @@ header > div #li3 {
   top: 2284px;
   color: white;
 }
-#body > div ul #s5 #n5 {
+#body > div ul #s5 div #n5 {
   /* VIDEO GAMES CAMP */
   position: absolute;
   width: 247px;
@@ -912,14 +912,14 @@ header > div #li3 {
   height: 370.93px;
   left: 550.07px;
   top: 2184.93px;
-  background: url(gametruck-video-games-activity.jpg);
+  background-image: url(gametruck-video-games-activity.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s6 {
     grid-area: s6;
   }
 }
-#body > div ul #s6 a {
+#body > div ul #s6 div a {
   /* Shark Icon */
   display: block;
   position: absolute;
@@ -929,7 +929,7 @@ header > div #li3 {
   top: 2283.62px;
   color: white;
 }
-#body > div ul #s6 #n6 {
+#body > div ul #s6 div #n6 {
   /* SHARK TANK CAMP */
   position: absolute;
   width: 247px;
@@ -951,7 +951,7 @@ header > div #li3 {
   height: 370.93px;
   left: 954.81px;
   top: 2184.93px;
-  background: url(18CAMP_MakerSpace_9659-Edit.jpg);
+  background-image: url(18CAMP_MakerSpace_9659-Edit.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul {
