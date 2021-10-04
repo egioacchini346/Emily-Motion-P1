@@ -582,25 +582,52 @@ header li {
   width: 5100px;
   grid-template-areas: "s1 s2 s3" "s4 s5 s6";
 }
-@media (min-width: 768px) {
-  #body ul #s1 {
-    grid-area: s1;
-  }
+#body ul #n1 {
+  /* SUMMERTIME FUN CAMP */
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 192px;
+  top: 1948px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
 }
-@media (min-width: 768px) {
-  #body ul #s2 {
-    grid-area: s2;
-  }
+#body ul #s1 {
+  /* Summertime Fun Camp Image */
+  position: absolute;
+  width: 336.51px;
+  height: 370.58px;
+  left: 143.07px;
+  top: 1744.93px;
 }
-@media (min-width: 768px) {
-  #body ul #s3 {
-    grid-area: s3;
-  }
+#body ul #s2 {
+  /* Star Wars Camp Image */
+  position: absolute;
+  width: 337.51px;
+  height: 370.58px;
+  left: 550.07px;
+  top: 1744.93px;
 }
-@media (min-width: 768px) {
-  #body ul #s4 {
-    grid-area: s4;
-  }
+#body ul #s3 {
+  /* Wizarding Games Camp Image */
+  position: absolute;
+  width: 337.77px;
+  height: 370.58px;
+  left: 954.81px;
+  top: 1744.93px;
+}
+#body ul #s4 {
+  /* Hunger Games Camp Image */
+  position: absolute;
+  width: 336.51px;
+  height: 370.93px;
+  left: 144.07px;
+  top: 2185.93px;
 }
 #body ul #s5 {
   /* Video Games Camp Image */
@@ -610,10 +637,13 @@ header li {
   left: 550.07px;
   top: 2184.93px;
 }
-@media (min-width: 768px) {
-  #body ul #s6 {
-    grid-area: s6;
-  }
+#body ul #s6 {
+  /* Shark Tank Camp Image */
+  position: absolute;
+  width: 336.77px;
+  height: 370.93px;
+  left: 954.81px;
+  top: 2184.93px;
 }
 @media (min-width: 768px) {
   #body ul {
