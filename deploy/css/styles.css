@@ -802,7 +802,7 @@ header > div #li3 {
     grid-area: s3;
   }
 }
-#body > div ul #s3 div body a {
+#body > div ul #s3 div body img {
   /* Lightning Bolt Icon */
   display: block;
   position: absolute;
