@@ -11,6 +11,13 @@
         top: 1470px;
     }
 
+    grid-container {
+        display: grid;
+        width: 5100px;
+        grid-template-areas:
+                    "s1 s2 s3"
+                    "s4 s5 s6";
+    }
 
     ul {
 
