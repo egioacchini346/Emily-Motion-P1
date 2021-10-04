@@ -415,6 +415,45 @@ textarea {
 /* =============
     Header
 ============= */
+header li {
+  /* ABOUT */
+  position: absolute;
+  width: 63px;
+  height: 21px;
+  left: 990px;
+  top: 34px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  /* PROGRAMS & ACTIVITIES */
+  position: absolute;
+  width: 217px;
+  height: 21px;
+  left: 1086px;
+  top: 34px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  /* CONTACT */
+  position: absolute;
+  width: 85px;
+  height: 21px;
+  left: 1332px;
+  top: 34px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
 /* =============
     Footer
 ============= */
@@ -451,17 +490,6 @@ textarea {
   line-height: 48px;
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#hero hero-img {
-  /* Tint */
-  width: 1440px;
-  height: 1042px;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 60.92%;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 /* =============
