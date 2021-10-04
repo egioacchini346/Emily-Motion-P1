@@ -3,6 +3,13 @@
 ============= */
 #body {
 
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
 
     .grid-container {
         display: grid;
@@ -70,8 +77,8 @@
                             position: absolute;
                             width: 74.27px;
                             height: 74.27px;
-                            margin-left: 277.81px;
-                            margin-top: 1832.24px;
+                            left: 277.81px;
+                            top: 1832.24px;
                             color: white;
                         }
 
