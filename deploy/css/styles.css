@@ -756,6 +756,7 @@ header > div #li3 {
   height: 370.58px;
   left: 143.07px;
   top: 1744.93px;
+  background: url(Kids-Camps_Header_2000x1000.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s2 {
@@ -794,6 +795,7 @@ header > div #li3 {
   height: 370.58px;
   left: 550.07px;
   top: 1744.93px;
+  background: url(maxresdefault.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s3 {
@@ -832,6 +834,7 @@ header > div #li3 {
   height: 370.58px;
   left: 954.81px;
   top: 1744.93px;
+  background: url(large_list138050_34652.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s4 {
@@ -870,6 +873,7 @@ header > div #li3 {
   height: 370.93px;
   left: 144.07px;
   top: 2185.93px;
+  background: url(hungergamesfeature.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s5 {
@@ -908,6 +912,7 @@ header > div #li3 {
   height: 370.93px;
   left: 550.07px;
   top: 2184.93px;
+  background: url(gametruck-video-games-activity.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul #s6 {
@@ -922,7 +927,7 @@ header > div #li3 {
   height: 52.05px;
   left: 1059.34px;
   top: 2283.62px;
-  color: white;
+  background: #FFFFFF;
 }
 #body > div ul #s6 #n6 {
   /* SHARK TANK CAMP */
@@ -946,6 +951,7 @@ header > div #li3 {
   height: 370.93px;
   left: 954.81px;
   top: 2184.93px;
+  background: url(18CAMP_MakerSpace_9659-Edit.jpg);
 }
 @media (min-width: 768px) {
   #body > div ul {
