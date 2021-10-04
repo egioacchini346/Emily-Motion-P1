@@ -2,7 +2,10 @@ import {
     gsap
 } from "gsap";
 
-const mainTL = gsap.timeline();
+const mainTL = gsap.timeline().from("#header, {flip:0")
+
+<i class="fas fa-phone fa-flip-horizontal"></i>
+
 // reference the timeline | Do we want to start at the beginning or the end of the timeline? | What thing do you want to annimate? | Duration of the animation? | What do we want to do?
 
 
