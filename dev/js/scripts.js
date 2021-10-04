@@ -1,1 +1,3 @@
-// import { gsap } from "gsap";
+import { gsap } from "gsap";
+
+const mainTL = gsap.timeline();

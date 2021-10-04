@@ -1,0 +1,1 @@
+gsap.to(window,{duration:2,scrollTo:400});
