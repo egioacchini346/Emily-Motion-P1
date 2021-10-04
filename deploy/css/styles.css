@@ -919,7 +919,7 @@ header > div #li3 {
     grid-area: s6;
   }
 }
-#body > div ul #s6 div img {
+#body > div ul #s6 div body {
   /* Shark Icon */
   display: block;
   position: absolute;
