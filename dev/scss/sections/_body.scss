@@ -5,27 +5,29 @@
 #body {
 
 
-    grid-picture {
-        /* Frame */
-        width: 1275.04px;
-        height: 1086.37px;
-        left: 82px;
-        top: 1470px;
+
+    h4 {
+        position: absolute;
+        text-align: center;
+        top: 185px;
+        left: 0;
+        width: 100%;
+        color: white;
     }
 
-    grid-container {
+    .grid-container {
         display: grid;
         width: 5100px;
+
         grid-template-areas:
             "s1 s2 s3"
             "s4 s5 s6";
     }
 
-    .fixed-header{
-        top: 0;
-    }
+
 
     ul {
+
 
 
 
@@ -54,6 +56,7 @@
 
 
         #s2 {
+
             /* Star Wars Camp Image */
 
 
@@ -113,11 +116,13 @@
             height: 370.93px;
             left: 550.07px;
             top: 2184.93px;
-            
+
 
         }
 
         #s6 {
+
+
             /* Shark Tank Camp Image */
 
 
@@ -126,6 +131,8 @@
             height: 370.93px;
             left: 954.81px;
             top: 2184.93px;
+
+
         }
 
         @include md {

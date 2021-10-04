@@ -553,7 +553,7 @@ header > div #li3 {
   width: 1296px;
   height: 46px;
   left: 72px;
-  bottom: 1420px;
+  bottom: 1375px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -678,20 +678,18 @@ header > div #li3 {
 /* =============
     body
 ============= */
-#body grid-picture {
-  /* Frame */
-  width: 1275.04px;
-  height: 1086.37px;
-  left: 82px;
-  top: 1470px;
+#body h4 {
+  position: absolute;
+  text-align: center;
+  top: 185px;
+  left: 0;
+  width: 100%;
+  color: white;
 }
-#body grid-container {
+#body .grid-container {
   display: grid;
   width: 5100px;
   grid-template-areas: "s1 s2 s3" "s4 s5 s6";
-}
-#body .fixed-header {
-  top: 0;
 }
 #body ul #s1 {
   /* Summertime Fun Camp Image */
