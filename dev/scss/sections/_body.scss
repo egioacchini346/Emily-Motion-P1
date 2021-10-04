@@ -4,7 +4,7 @@
 
 #body {
 
-    
+
 
     grid-picture {
         /* Frame */
@@ -29,6 +29,69 @@
 
 
         #s1 {
+
+            /* Container needed to position the overlay. Adjust the width as needed */
+            .container {
+                position: relative;
+                width: 100%;
+                max-width: 400px;
+            }
+
+            /* Make the image to responsive */
+            .image {
+                width: 100%;
+                height: auto;
+            }
+
+            /* The overlay effect (full height and width) - lays on top of the container and over the image */
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .3s ease;
+            }
+
+            /* When you mouse over the container, fade in the overlay icon*/
+            .container:hover .overlay {
+                opacity: 1;
+            }
+
+            /* The icon inside the overlay is positioned in the middle vertically and horizontally */
+            .icon {
+
+                /* Sun Icon */
+
+
+                position: relative;
+                width: 74.27px;
+                height: 74.27px;
+                left: 277.81px;
+                top: 1832.24px;
+
+                /* SUMMERTIME FUN CAMP */
+
+
+                position: absolute;
+                width: 247px;
+                height: 56px;
+                left: 192px;
+                top: 1948px;
+
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+
 
             /* Sun Icon */
 
