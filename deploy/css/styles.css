@@ -873,6 +873,12 @@ header > div #li3 {
   top: 2185.93px;
   background-image: url(hungergamesfeature.jpg);
 }
+#body > div ul #s4 img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 @media (min-width: 768px) {
   #body > div ul #s5 {
     grid-area: s5;
@@ -882,6 +888,8 @@ header > div #li3 {
   /* Video Game Icon */
   display: block;
   position: absolute;
+  width: 74.33px;
+  height: 49.22px;
   left: 681px;
   top: 2284px;
   color: white;

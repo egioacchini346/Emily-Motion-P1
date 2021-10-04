@@ -276,7 +276,12 @@
 
                 img {
                     /* Hunger Games Camp Image */
-
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                      }
 
                     position: absolute;
                     width: 336.51px;
@@ -301,6 +306,8 @@
                             /* Video Game Icon */
                             display: block;
                             position: absolute;
+                            width: 74.33px;
+                            height: 49.22px;
                             left: 681px;
                             top: 2284px;
                             color: white;
