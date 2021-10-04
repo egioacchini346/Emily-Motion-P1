@@ -428,6 +428,8 @@ header li {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+}
+header li {
   /* PROGRAMS & ACTIVITIES */
   position: absolute;
   width: 217px;
@@ -440,6 +442,8 @@ header li {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+}
+header li {
   /* CONTACT */
   position: absolute;
   width: 85px;
