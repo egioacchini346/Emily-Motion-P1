@@ -866,18 +866,13 @@ header > div #li3 {
 }
 #body > div ul #s4 img {
   /* Hunger Games Camp Image */
+  display: inline-block;
   position: absolute;
   width: 336.51px;
   height: 370.93px;
   left: 144.07px;
   top: 2185.93px;
   background-image: url(hungergamesfeature.jpg);
-}
-#body > div ul #s4 img img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
 }
 @media (min-width: 768px) {
   #body > div ul #s5 {
