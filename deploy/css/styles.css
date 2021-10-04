@@ -364,6 +364,9 @@ ul {
 ul li {
   list-style: none;
 }
+ul h1 {
+  text-decoration: none;
+}
 
 /* =============
     Typography
