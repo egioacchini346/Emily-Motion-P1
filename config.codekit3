@@ -151,11 +151,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/body\/video_game_controller_icon.svg" : {
+    "\/deploy\/img\/body\/video_game_icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/body\/video_game_controller_icon.svg",
+      "oAP" : "\/deploy\/img\/body\/video_game_icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -557,28 +557,6 @@
       "oA" : 2,
       "oAP" : "\/node_modules",
       "oF" : 0
-    },
-    "\/node_modules\/gsap\/CSSPlugin.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/node_modules\/gsap\/CSSPlugin-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/node_modules\/gsap\/gsap-core.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/node_modules\/gsap\/gsap-core-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
