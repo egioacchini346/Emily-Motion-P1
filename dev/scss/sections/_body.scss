@@ -15,7 +15,6 @@
         display: grid;
         width: 5100px;
         grid-template-areas:
-                    "s7 s8 s9 s10"
                     "s1 s2 s3"
                     "s4 s5 s6";
     }
@@ -59,38 +58,20 @@
             }
         }
 
-        #s7 {
-            @include md {
-                grid-area: s3;
-            }
-        }
-
-        #s8 {
-            @include md {
-                grid-area: s4;
-            }
-        }
-
-        #s9 {
-            @include md {
-                grid-area: s5;
-            }
-        }
-
-        #s10 {
-            @include md {
-                grid-area: s6;
-            }
-        }
-
         @include md {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-areas:
-                "s7 s8 s9 s10"
                 "s1 s2 s3"
                 "s4 s5 s6";
             gap: 16px;
+        }
+
+        @include lg {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+                "s1 s1  s2 s2 s3 s3"
+                ". s4 s4 s5 s5 .";
         }
     }
 

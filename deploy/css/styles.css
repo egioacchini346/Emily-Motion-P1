@@ -431,7 +431,7 @@ textarea {
 #body grid-container {
   display: grid;
   width: 5100px;
-  grid-template-areas: "s7 s8 s9 s10" "s1 s2 s3" "s4 s5 s6";
+  grid-template-areas: "s1 s2 s3" "s4 s5 s6";
 }
 @media (min-width: 768px) {
   #body ul #s1 {
@@ -464,30 +464,16 @@ textarea {
   }
 }
 @media (min-width: 768px) {
-  #body ul #s7 {
-    grid-area: s3;
-  }
-}
-@media (min-width: 768px) {
-  #body ul #s8 {
-    grid-area: s4;
-  }
-}
-@media (min-width: 768px) {
-  #body ul #s9 {
-    grid-area: s5;
-  }
-}
-@media (min-width: 768px) {
-  #body ul #s10 {
-    grid-area: s6;
-  }
-}
-@media (min-width: 768px) {
   #body ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "s7 s8 s9 s10" "s1 s2 s3" "s4 s5 s6";
+    grid-template-areas: "s1 s2 s3" "s4 s5 s6";
     gap: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #body ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "s1 s1  s2 s2 s3 s3" ". s4 s4 s5 s5 .";
   }
 }
