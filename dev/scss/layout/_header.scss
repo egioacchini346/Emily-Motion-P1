@@ -4,85 +4,93 @@
 
 
 header {
-
-    aside {
-
-        position: absolute;
-        width: 63px;
-        height: 63px;
-        left: 12px;
-        top: 8px;
-    }
-
-
-    li {
-        /* ABOUT */
-
-
-        position: absolute;
-        width: 63px;
-        height: 21px;
-        left: 990px;
-        top: 34px;
-
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 21px;
-
-        color: #FFFFFF;
-    }
-
-    li {
-        /* PROGRAMS & ACTIVITIES */
-
-
-        position: absolute;
-        width: 217px;
-        height: 21px;
-        left: 1086px;
-        top: 34px;
-
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 21px;
-
-        color: #FFFFFF;
-
-    }
-
-    li {
-        /* CONTACT */
-
-
-        position: absolute;
-        width: 85px;
-        height: 21px;
-        left: 1332px;
-        top: 34px;
-
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 21px;
-
-        color: #FFFFFF;
-
-    }
-
-    /* Header */
-
+    /* bg */
 
     position: absolute;
-    width: 1440px;
+    width: 1500px;
     height: 81px;
     left: 0px;
     top: 0px;
 
     opacity: 0.6;
     filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
+
+    background-color: black;
+
+
+
+    >div {
+
+
+        aside {
+
+            position: absolute;
+            width: 63px;
+            height: 63px;
+            left: 12px;
+            top: 8px;
+        }
+
+
+        #li1 {
+            /* ABOUT */
+
+
+            position: absolute;
+            width: 63px;
+            height: 21px;
+            left: 990px;
+            top: 34px;
+
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #FFFFFF;
+        }
+
+        #li2 {
+            /* PROGRAMS & ACTIVITIES */
+
+
+            position: absolute;
+            width: 217px;
+            height: 21px;
+            left: 1086px;
+            top: 34px;
+
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #FFFFFF;
+
+        }
+
+        #li3 {
+            /* CONTACT */
+
+
+            position: absolute;
+            width: 85px;
+            height: 21px;
+            left: 1332px;
+            top: 34px;
+
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #FFFFFF;
+        }
+
+
+    }
+
 }
