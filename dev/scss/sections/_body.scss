@@ -5,7 +5,6 @@
 #body {
 
 
-
     grid-picture {
         /* Frame */
         width: 1275.04px;
@@ -54,6 +53,7 @@
                 width: 100%;
                 opacity: 0;
                 transition: .3s ease;
+
             }
 
             /* When you mouse over the container, fade in the overlay icon*/
@@ -63,7 +63,17 @@
 
             /* The icon inside the overlay is positioned in the middle vertically and horizontally */
             .icon {
+                color: white;
+                font-size: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
 
+            a {
                 /* Sun Icon */
 
 
@@ -73,6 +83,9 @@
                 left: 277.81px;
                 top: 1832.24px;
 
+            }
+
+            #n1 {
                 /* SUMMERTIME FUN CAMP */
 
 
@@ -90,35 +103,8 @@
                 text-align: center;
 
                 color: #FFFFFF;
+
             }
-
-
-            /* Sun Icon */
-
-
-            position: relative;
-            width: 74.27px;
-            height: 74.27px;
-            left: 277.81px;
-            top: 1832.24px;
-
-            /* SUMMERTIME FUN CAMP */
-
-
-            position: absolute;
-            width: 247px;
-            height: 56px;
-            left: 192px;
-            top: 1948px;
-
-            font-family: Raleway;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 28px;
-            text-align: center;
-
-            color: #FFFFFF;
 
             /* Summertime Fun Camp Image */
 

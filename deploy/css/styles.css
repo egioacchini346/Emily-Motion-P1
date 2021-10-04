@@ -579,25 +579,6 @@ header li {
   /* The overlay effect (full height and width) - lays on top of the container and over the image */
   /* When you mouse over the container, fade in the overlay icon*/
   /* The icon inside the overlay is positioned in the middle vertically and horizontally */
-  /* Sun Icon */
-  position: relative;
-  width: 74.27px;
-  height: 74.27px;
-  left: 277.81px;
-  top: 1832.24px;
-  /* SUMMERTIME FUN CAMP */
-  position: absolute;
-  width: 247px;
-  height: 56px;
-  left: 192px;
-  top: 1948px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #FFFFFF;
   /* Summertime Fun Camp Image */
   position: absolute;
   width: 336.51px;
@@ -629,12 +610,24 @@ header li {
   opacity: 1;
 }
 #body ul #s1 .icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#body ul #s1 a {
   /* Sun Icon */
   position: relative;
   width: 74.27px;
   height: 74.27px;
   left: 277.81px;
   top: 1832.24px;
+}
+#body ul #s1 #n1 {
   /* SUMMERTIME FUN CAMP */
   position: absolute;
   width: 247px;
