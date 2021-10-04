@@ -11,18 +11,18 @@ mainTL.from("#hero", {
     sacle: 2
 });
 
+const state = Flop.getState(".logo");
+
 
 gsap.set(".quickflip", {
     transformStyle: "preserve-3d",
     transformPerspective: 1000
 });
-gsap.set(".qf-card", {
+gsap.set(".logo", {
     transformStyle: "preserve-3d",
     transformOrigin: "50% 50%",
 });
-gsap.set(".qf-back", {
-    rotationX: 180
-});
+
 
 const timing = 1;
 
@@ -41,6 +41,6 @@ tl.to(".quickflip", {
 }, 0);
 
 gsap.utils.toArray(".quickflip").forEach(flip => {
-    flip.addEventListener("mouseenter", event => tl.play("logo"));
-    flip.addEventListener("mouseleave", event => tl.reverse("logo"));
+    flip.addEventListener("mouseenter", event => tl.play(logo));
+    flip.addEventListener("mouseleave", event => tl.reverse(logo));
 });
