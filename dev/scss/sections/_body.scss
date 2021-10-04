@@ -21,13 +21,26 @@
             "s4 s5 s6";
     }
 
-
+    .fixed-header{
+        top: 0;
+    }
 
     ul {
 
 
 
         #s1 {
+            a {
+                /* Sun Icon */
+
+
+                position: absolute;
+                width: 74.27px;
+                height: 74.27px;
+                left: 277.81px;
+                top: 1832.24px;
+            }
+
             /* Summertime Fun Camp Image */
 
 
@@ -64,6 +77,21 @@
         }
 
         #s4 {
+
+            a {
+                /* Hand Sign Icon */
+
+
+                position: absolute;
+                width: 49.73px;
+                height: 74.3px;
+                left: 290.12px;
+                top: 2267.73px;
+
+                background: #FFFFFF;
+
+            }
+
             /* Hunger Games Camp Image */
 
 
@@ -85,6 +113,7 @@
             height: 370.93px;
             left: 550.07px;
             top: 2184.93px;
+            
 
         }
 

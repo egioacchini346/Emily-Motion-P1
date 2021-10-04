@@ -690,6 +690,9 @@ header > div #li3 {
   width: 5100px;
   grid-template-areas: "s1 s2 s3" "s4 s5 s6";
 }
+#body .fixed-header {
+  top: 0;
+}
 #body ul #s1 {
   /* Summertime Fun Camp Image */
   position: absolute;
@@ -697,6 +700,14 @@ header > div #li3 {
   height: 370.58px;
   left: 143.07px;
   top: 1744.93px;
+}
+#body ul #s1 a {
+  /* Sun Icon */
+  position: absolute;
+  width: 74.27px;
+  height: 74.27px;
+  left: 277.81px;
+  top: 1832.24px;
 }
 #body ul #s2 {
   /* Star Wars Camp Image */
@@ -721,6 +732,15 @@ header > div #li3 {
   height: 370.93px;
   left: 144.07px;
   top: 2185.93px;
+}
+#body ul #s4 a {
+  /* Hand Sign Icon */
+  position: absolute;
+  width: 49.73px;
+  height: 74.3px;
+  left: 290.12px;
+  top: 2267.73px;
+  background: #FFFFFF;
 }
 #body ul #s5 {
   /* Video Games Camp Image */
