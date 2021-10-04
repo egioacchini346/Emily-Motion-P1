@@ -602,10 +602,13 @@ header li {
     grid-area: s4;
   }
 }
-@media (min-width: 768px) {
-  #body ul #s5 {
-    grid-area: s5;
-  }
+#body ul #s5 {
+  /* Video Games Camp Image */
+  position: absolute;
+  width: 337.51px;
+  height: 370.93px;
+  left: 550.07px;
+  top: 2184.93px;
 }
 @media (min-width: 768px) {
   #body ul #s6 {
