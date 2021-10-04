@@ -4,6 +4,8 @@
 
 #body {
 
+    
+
     grid-picture {
         /* Frame */
         width: 1275.04px;
@@ -20,13 +22,41 @@
             "s4 s5 s6";
     }
 
-    
+
 
     ul {
 
-        
+
 
         #s1 {
+
+            /* Sun Icon */
+
+
+            position: relative;
+            width: 74.27px;
+            height: 74.27px;
+            left: 277.81px;
+            top: 1832.24px;
+
+            /* SUMMERTIME FUN CAMP */
+
+
+            position: absolute;
+            width: 247px;
+            height: 56px;
+            left: 192px;
+            top: 1948px;
+
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+
+            color: #FFFFFF;
+
             /* Summertime Fun Camp Image */
 
 
@@ -37,6 +67,7 @@
             top: 1744.93px;
 
         }
+
 
         #s2 {
             /* Star Wars Camp Image */

@@ -481,15 +481,6 @@ header li {
 /* =============
     before-body
 ============= */
-#hero-content {
-  /* Camp Background Image */
-  position: absolute;
-  width: 1440px;
-  height: 1042px;
-  left: 0px;
-  top: 0px;
-  background: url(858500_163688497163369_96);
-}
 #hero-content a {
   /* Map Pin Icon */
   position: absolute;
@@ -583,6 +574,25 @@ header li {
   grid-template-areas: "s1 s2 s3" "s4 s5 s6";
 }
 #body ul #s1 {
+  /* Sun Icon */
+  position: relative;
+  width: 74.27px;
+  height: 74.27px;
+  left: 277.81px;
+  top: 1832.24px;
+  /* SUMMERTIME FUN CAMP */
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 192px;
+  top: 1948px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
   /* Summertime Fun Camp Image */
   position: absolute;
   width: 336.51px;
