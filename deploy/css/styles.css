@@ -841,7 +841,7 @@ header > div #li3 {
     grid-area: s4;
   }
 }
-#body > div ul #s4 body a {
+#body > div ul #s4 div body {
   /* Hand Sign Icon */
   display: block;
   position: absolute;
@@ -851,7 +851,7 @@ header > div #li3 {
   top: 2267.73px;
   color: white;
 }
-#body > div ul #s4 body #n4 {
+#body > div ul #s4 div #n4 {
   /* HUNGER GAMES CAMP */
   position: absolute;
   width: 247px;
