@@ -729,8 +729,8 @@ header > div #li3 {
   position: absolute;
   width: 74.27px;
   height: 74.27px;
-  left: 277.81px;
-  top: 1832.24px;
+  margin-left: 277.81px;
+  margin-top: 1832.24px;
   color: white;
 }
 #body > div ul #s1 div #n1 {
