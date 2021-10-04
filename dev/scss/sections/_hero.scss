@@ -5,20 +5,6 @@
 #hero-content {
 
 
-    a {
-        /* Map Pin Icon */
-
-
-        position: absolute;
-        left: 41.53%;
-        right: 55.97%;
-        top: 8.74%;
-        bottom: 89.46%;
-
-        background: #FFFFFF;
-
-    }
-
     h1 {
         /* Summer Camps */
 
@@ -60,6 +46,21 @@
         color: #FFFFFF;
 
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+    a {
+        /* Map Pin Icon */
+
+
+        position: absolute;
+        left: 27.25%;
+        right: 59%;
+        top: 9.25%;
+        bottom: 83%;
+
+        color: #FFFFFF;
+
     }
 
     #hero1 {
@@ -71,8 +72,6 @@
         left: 0px;
         top: 0px;
         background: url(858500_163688497163369_961656220_o.png)
-
-
     }
 
 
