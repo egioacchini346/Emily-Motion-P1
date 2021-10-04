@@ -2,7 +2,18 @@
     Header
 ============= */
 
+
 header {
+
+    /* Logo */
+
+
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    left: 12px;
+    top: 8px;
+
 
     li {
         /* ABOUT */
@@ -60,7 +71,6 @@ header {
         line-height: 21px;
 
         color: #FFFFFF;
+
     }
-
-
 }

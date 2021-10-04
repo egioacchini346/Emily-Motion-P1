@@ -415,6 +415,14 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  /* Logo */
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  left: 12px;
+  top: 8px;
+}
 header li {
   /* ABOUT */
   position: absolute;
@@ -464,6 +472,15 @@ header li {
 /* =============
     before-body
 ============= */
+#hero {
+  /* Map Pin Icon */
+  position: absolute;
+  left: 41.53%;
+  right: 55.97%;
+  top: 8.74%;
+  bottom: 89.46%;
+  background: #FFFFFF;
+}
 #hero h1 {
   /* Summer Camps */
   position: absolute;
