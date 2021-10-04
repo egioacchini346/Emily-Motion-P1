@@ -553,7 +553,7 @@ header > div #li3 {
   width: 1296px;
   height: 46px;
   left: 72px;
-  bottom: 1375px;
+  top: 1090px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -678,6 +678,18 @@ header > div #li3 {
 /* =============
     body
 ============= */
+#body {
+  padding-bottom: 10px;
+}
+#body .grid-container {
+  display: grid;
+  width: 5100px;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px auto 100px;
+  column-gap: 35px;
+  row-gap: 35px;
+  grid-template-areas: "s1 s2 s3" "s4 s5 s6";
+}
 #body h4 {
   position: absolute;
   text-align: center;
@@ -686,12 +698,58 @@ header > div #li3 {
   width: 100%;
   color: white;
 }
-#body .grid-container {
-  display: grid;
-  width: 5100px;
-  grid-template-areas: "s1 s2 s3" "s4 s5 s6";
+#body ul li {
+  margin-bottom: 16px;
 }
-#body ul #s1 {
+@media (min-width: 768px) {
+  #body {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". body .";
+  }
+}
+@media (min-width: 1200px) {
+  #body {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+@media (min-width: 768px) {
+  #body > div {
+    grid-area: body;
+  }
+}
+@media (min-width: 768px) {
+  #body > div ul #s1 {
+    grid-area: s1;
+  }
+}
+#body > div ul #s1 a {
+  /* Sun Icon */
+  display: block;
+  position: absolute;
+  width: 74.27px;
+  height: 74.27px;
+  left: 277.81px;
+  top: 1832.24px;
+  color: white;
+}
+#body > div ul #s1 #n1 {
+  /* SUMMERTIME FUN CAMP */
+  display: inline-block;
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 192px;
+  top: 1948px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#body > div ul #s1 img {
   /* Summertime Fun Camp Image */
   position: absolute;
   width: 336.51px;
@@ -699,15 +757,37 @@ header > div #li3 {
   left: 143.07px;
   top: 1744.93px;
 }
-#body ul #s1 a {
-  /* Sun Icon */
-  position: absolute;
-  width: 74.27px;
-  height: 74.27px;
-  left: 277.81px;
-  top: 1832.24px;
+@media (min-width: 768px) {
+  #body > div ul #s2 {
+    grid-area: s2;
+  }
 }
-#body ul #s2 {
+#body > div ul #s2 a {
+  /* Jedi Icon */
+  display: block;
+  position: absolute;
+  width: 75.28px;
+  height: 76.15px;
+  left: 680.6px;
+  top: 1830.36px;
+  color: white;
+}
+#body > div ul #s2 #n2 {
+  /* STAR WARS CAMP */
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 595px;
+  top: 1948px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#body > div ul #s2 img {
   /* Star Wars Camp Image */
   position: absolute;
   width: 337.51px;
@@ -715,7 +795,37 @@ header > div #li3 {
   left: 550.07px;
   top: 1744.93px;
 }
-#body ul #s3 {
+@media (min-width: 768px) {
+  #body > div ul #s3 {
+    grid-area: s3;
+  }
+}
+#body > div ul #s3 a {
+  /* Lightning Bolt Icon */
+  display: block;
+  position: absolute;
+  width: 47.8px;
+  height: 76.5px;
+  left: 1099.16px;
+  top: 1830.02px;
+  color: white;
+}
+#body > div ul #s3 #n3 {
+  /* WIZARDING GAMES CAMP */
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 1000px;
+  top: 1948px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#body > div ul #s3 img {
   /* Wizarding Games Camp Image */
   position: absolute;
   width: 337.77px;
@@ -723,7 +833,37 @@ header > div #li3 {
   left: 954.81px;
   top: 1744.93px;
 }
-#body ul #s4 {
+@media (min-width: 768px) {
+  #body > div ul #s4 {
+    grid-area: s4;
+  }
+}
+#body > div ul #s4 a {
+  /* Hand Sign Icon */
+  display: block;
+  position: absolute;
+  width: 49.73px;
+  height: 74.3px;
+  left: 290.12px;
+  top: 2267.73px;
+  color: white;
+}
+#body > div ul #s4 #n4 {
+  /* HUNGER GAMES CAMP */
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 192px;
+  top: 2384px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#body > div ul #s4 img {
   /* Hunger Games Camp Image */
   position: absolute;
   width: 336.51px;
@@ -731,16 +871,37 @@ header > div #li3 {
   left: 144.07px;
   top: 2185.93px;
 }
-#body ul #s4 a {
-  /* Hand Sign Icon */
-  position: absolute;
-  width: 49.73px;
-  height: 74.3px;
-  left: 290.12px;
-  top: 2267.73px;
-  background: #FFFFFF;
+@media (min-width: 768px) {
+  #body > div ul #s5 {
+    grid-area: s5;
+  }
 }
-#body ul #s5 {
+#body > div ul #s5 a {
+  /* Video Game Controller Icon */
+  display: block;
+  position: absolute;
+  width: 74.33px;
+  height: 49.22px;
+  left: 681px;
+  top: 2284px;
+  color: white;
+}
+#body > div ul #s5 #n5 {
+  /* VIDEO GAMES CAMP */
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 597px;
+  top: 2384px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#body > div ul #s5 img {
   /* Video Games Camp Image */
   position: absolute;
   width: 337.51px;
@@ -748,7 +909,37 @@ header > div #li3 {
   left: 550.07px;
   top: 2184.93px;
 }
-#body ul #s6 {
+@media (min-width: 768px) {
+  #body > div ul #s6 {
+    grid-area: s6;
+  }
+}
+#body > div ul #s6 a {
+  /* Shark Icon */
+  display: block;
+  position: absolute;
+  width: 127.52px;
+  height: 52.05px;
+  left: 1059.34px;
+  top: 2283.62px;
+  color: white;
+}
+#body > div ul #s6 #n6 {
+  /* SHARK TANK CAMP */
+  position: absolute;
+  width: 247px;
+  height: 56px;
+  left: 999px;
+  top: 2384px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#body > div ul #s6 img {
   /* Shark Tank Camp Image */
   position: absolute;
   width: 336.77px;
@@ -757,14 +948,16 @@ header > div #li3 {
   top: 2184.93px;
 }
 @media (min-width: 768px) {
-  #body ul {
+  #body > div ul {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "s1 s2 s3" "s4 s5 s6";
     gap: 16px;
   }
 }
 @media (min-width: 992px) {
-  #body ul {
+  #body > div ul {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "s1 s2 s3" "s4 s5 s6";
   }
 }

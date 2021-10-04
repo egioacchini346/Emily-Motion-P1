@@ -1,10 +1,23 @@
 /* =============
     body
 ============= */
-
 #body {
 
+    .grid-container {
+        display: grid;
+        width: 5100px;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px auto 100px;
+        column-gap: 35px;
+        row-gap: 35px;
 
+        grid-template-areas:
+            "s1 s2 s3"
+            "s4 s5 s6";
+    }
+
+
+    padding-bottom: 10px;
 
     h4 {
         position: absolute;
@@ -15,141 +28,352 @@
         color: white;
     }
 
-    .grid-container {
-        display: grid;
-        width: 5100px;
-
-        grid-template-areas:
-            "s1 s2 s3"
-            "s4 s5 s6";
-    }
-
-
 
     ul {
-
-
-
-
-        #s1 {
-            a {
-                /* Sun Icon */
-
-
-                position: absolute;
-                width: 74.27px;
-                height: 74.27px;
-                left: 277.81px;
-                top: 1832.24px;
-            }
-
-            /* Summertime Fun Camp Image */
-
-
-            position: absolute;
-            width: 336.51px;
-            height: 370.58px;
-            left: 143.07px;
-            top: 1744.93px;
-
-        }
-
-
-        #s2 {
-
-            /* Star Wars Camp Image */
-
-
-            position: absolute;
-            width: 337.51px;
-            height: 370.58px;
-            left: 550.07px;
-            top: 1744.93px;
-        }
-
-        #s3 {
-            /* Wizarding Games Camp Image */
-
-
-            position: absolute;
-            width: 337.77px;
-            height: 370.58px;
-            left: 954.81px;
-            top: 1744.93px;
-
-        }
-
-        #s4 {
-
-            a {
-                /* Hand Sign Icon */
-
-
-                position: absolute;
-                width: 49.73px;
-                height: 74.3px;
-                left: 290.12px;
-                top: 2267.73px;
-
-                background: #FFFFFF;
-
-            }
-
-            /* Hunger Games Camp Image */
-
-
-            position: absolute;
-            width: 336.51px;
-            height: 370.93px;
-            left: 144.07px;
-            top: 2185.93px;
-
-        }
-
-        #s5 {
-
-            /* Video Games Camp Image */
-
-
-            position: absolute;
-            width: 337.51px;
-            height: 370.93px;
-            left: 550.07px;
-            top: 2184.93px;
-
-
-        }
-
-        #s6 {
-
-
-            /* Shark Tank Camp Image */
-
-
-            position: absolute;
-            width: 336.77px;
-            height: 370.93px;
-            left: 954.81px;
-            top: 2184.93px;
-
-
-        }
-
-        @include md {
-            display: grid;
-            grid-template-areas:
-                "s1 s2 s3"
-                "s4 s5 s6";
-            gap: 16px;
-        }
-
-        @include lg {
-            grid-template-areas:
-                "s1 s2 s3"
-                "s4 s5 s6";
+        li {
+            margin-bottom: 16px;
         }
     }
 
+    @include md {
+        display: grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". body .";
+
+    }
+
+    @include xl {
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div {
+
+        @include md {
+            grid-area: body;
+        }
+
+        ul {
+
+            #s1 {
+                @include md {
+                    grid-area: s1;
+
+                }
+
+                a {
+                    /* Sun Icon */
+
+                    display: block;
+                    position: absolute;
+                    width: 74.27px;
+                    height: 74.27px;
+                    left: 277.81px;
+                    top: 1832.24px;
+                    color: white;
+                }
+
+                #n1 {
+                    /* SUMMERTIME FUN CAMP */
+
+                    display: inline-block;
+                    position: absolute;
+                    width: 247px;
+                    height: 56px;
+                    left: 192px;
+                    top: 1948px;
+
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+                }
+
+                img {
+                    /* Summertime Fun Camp Image */
 
 
+                    position: absolute;
+                    width: 336.51px;
+                    height: 370.58px;
+                    left: 143.07px;
+                    top: 1744.93px;
+                }
+            }
+
+            #s2 {
+                @include md {
+                    grid-area: s2;
+                }
+
+                a {
+                    /* Jedi Icon */
+                    display: block;
+                    position: absolute;
+                    width: 75.28px;
+                    height: 76.15px;
+                    left: 680.6px;
+                    top: 1830.36px;
+                    color: white;
+                }
+
+
+                #n2 {
+                    /* STAR WARS CAMP */
+
+
+                    position: absolute;
+                    width: 247px;
+                    height: 56px;
+                    left: 595px;
+                    top: 1948px;
+
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+
+                }
+
+
+                img {
+                    /* Star Wars Camp Image */
+
+
+                    position: absolute;
+                    width: 337.51px;
+                    height: 370.58px;
+                    left: 550.07px;
+                    top: 1744.93px;
+                }
+
+            }
+
+            #s3 {
+                @include md {
+                    grid-area: s3;
+                }
+
+                a {
+                    /* Lightning Bolt Icon */
+                    display: block;
+                    position: absolute;
+                    width: 47.8px;
+                    height: 76.5px;
+                    left: 1099.16px;
+                    top: 1830.02px;
+                    color: white;
+                }
+
+                #n3 {
+                    /* WIZARDING GAMES CAMP */
+
+
+                    position: absolute;
+                    width: 247px;
+                    height: 56px;
+                    left: 1000px;
+                    top: 1948px;
+
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+
+
+                }
+
+
+                img {
+                    /* Wizarding Games Camp Image */
+
+
+                    position: absolute;
+                    width: 337.77px;
+                    height: 370.58px;
+                    left: 954.81px;
+                    top: 1744.93px;
+                }
+            }
+
+            #s4 {
+                @include md {
+                    grid-area: s4;
+                }
+
+                a {
+                    /* Hand Sign Icon */
+                    display: block;
+                    position: absolute;
+                    width: 49.73px;
+                    height: 74.3px;
+                    left: 290.12px;
+                    top: 2267.73px;
+                    color: white;
+                }
+
+                #n4 {
+                    /* HUNGER GAMES CAMP */
+
+
+                    position: absolute;
+                    width: 247px;
+                    height: 56px;
+                    left: 192px;
+                    top: 2384px;
+
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+
+                }
+
+                img {
+                    /* Hunger Games Camp Image */
+
+
+                    position: absolute;
+                    width: 336.51px;
+                    height: 370.93px;
+                    left: 144.07px;
+                    top: 2185.93px;
+
+                }
+            }
+
+            #s5 {
+                @include md {
+                    grid-area: s5;
+                }
+
+                a {
+                    /* Video Game Controller Icon */
+                    display: block;
+                    position: absolute;
+                    width: 74.33px;
+                    height: 49.22px;
+                    left: 681px;
+                    top: 2284px;
+                    color: white;
+                }
+
+                #n5 {
+                    /* VIDEO GAMES CAMP */
+
+
+                    position: absolute;
+                    width: 247px;
+                    height: 56px;
+                    left: 597px;
+                    top: 2384px;
+
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+
+                }
+
+                img {
+                    /* Video Games Camp Image */
+
+
+                    position: absolute;
+                    width: 337.51px;
+                    height: 370.93px;
+                    left: 550.07px;
+                    top: 2184.93px;
+                }
+            }
+
+            #s6 {
+                @include md {
+                    grid-area: s6;
+                }
+
+                a {
+                    /* Shark Icon */
+                    display: block;
+                    position: absolute;
+                    width: 127.52px;
+                    height: 52.05px;
+                    left: 1059.34px;
+                    top: 2283.62px;
+                    color: white;
+                }
+
+                #n6 {
+                    /* SHARK TANK CAMP */
+
+
+                    position: absolute;
+                    width: 247px;
+                    height: 56px;
+                    left: 999px;
+                    top: 2384px;
+
+                    font-family: Raleway;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+
+                    color: #FFFFFF;
+
+                }
+
+                img {
+                    /* Shark Tank Camp Image */
+
+
+                    position: absolute;
+                    width: 336.77px;
+                    height: 370.93px;
+                    left: 954.81px;
+                    top: 2184.93px;
+                }
+            }
+
+
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "s1 s2 s3"
+                    "s4 s5 s6";
+                gap: 16px;
+            }
+
+            @include lg {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "s1 s2 s3"
+                    "s4 s5 s6";
+            }
+
+
+
+        }
+    }
 }
