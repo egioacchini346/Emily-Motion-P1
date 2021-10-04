@@ -528,10 +528,10 @@ header > div #li3 {
 #hero-content a {
   /* Map Pin Icon */
   position: absolute;
-  left: 27.25%;
-  right: 59%;
-  top: 9.25%;
-  bottom: 83%;
+  width: 38px;
+  height: 51px;
+  left: 596px;
+  top: 233px;
   color: #FFFFFF;
 }
 #hero-content #hero1 {
@@ -678,17 +678,6 @@ header > div #li3 {
 /* =============
     body
 ============= */
-#body .container {
-  position: relative;
-}
-#body .container img {
-  display: block;
-}
-#body .container .fa-download {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 #body grid-picture {
   /* Frame */
   width: 1275.04px;
