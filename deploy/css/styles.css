@@ -421,71 +421,49 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  height: 100%;
+}
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 4vw;
+}
+nav ul li a:link, nav ul li a:visited {
+  font-family: "Raleway", serif;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.25s;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  color: #143251;
+}
+
 /* =============
     Header
 ============= */
 header {
-  /* bg */
-  position: absolute;
-  width: 1440px;
-  height: 81px;
-  left: 0px;
-  top: 0px;
-  opacity: 0.6;
-  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
+  position: fixed;
   background-color: black;
+  opacity: 10;
+  width: 100%;
+  height: 68px;
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
+  z-index: 100;
 }
-header > div a {
-  color: white;
+header > div {
+  display: grid;
+  grid-template-columns: 28% auto;
+  padding: 8px 16px;
 }
-header > div aside {
-  position: absolute;
-  width: 63px;
-  height: 63px;
-  left: 12px;
-  top: 8px;
-}
-header > div #li1 {
-  /* ABOUT */
-  position: absolute;
-  width: 63px;
-  height: 21px;
-  left: 990px;
-  top: 34px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-header > div #li2 {
-  /* PROGRAMS & ACTIVITIES */
-  position: absolute;
-  width: 217px;
-  height: 21px;
-  left: 1086px;
-  top: 34px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-header > div #li3 {
-  /* CONTACT */
-  position: absolute;
-  width: 85px;
-  height: 21px;
-  left: 1332px;
-  top: 34px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  color: #FFFFFF;
+header > div aside a {
+  display: inline-block;
 }
 
 /* =============
@@ -494,6 +472,11 @@ header > div #li3 {
 /* =============
     before-body
 ============= */
+img {
+  width: 100%;
+  background: url(858500_163688497163369_961656220_o.png);
+}
+
 #hero-content h1 {
   position: absolute;
   width: 762px;
@@ -531,149 +514,60 @@ header > div #li3 {
   top: 233px;
   color: #FFFFFF;
 }
-#hero-content #hero1 {
-  position: absolute;
-  width: 12px;
-  height: 1042px;
-  left: 0px;
-  top: 0px;
-  background: url(858500_163688497163369_961656220_o.png);
-}
 
 /* =============
     before-body
 ============= */
 #before-body h3 {
-  /* Are you looking for a summer camp your child will love? */
-  position: absolute;
-  width: 1296px;
-  height: 46px;
-  left: 72px;
-  top: 1090px;
-  font-family: Raleway;
-  font-style: normal;
+  font-family: "Raleway", Arial, serif;
+  font-style: regular;
   font-weight: bold;
+  text-align: center;
   font-size: 40px;
-  line-height: 35px;
-  /* or 87% */
-  text-align: justify;
-  text-transform: uppercase;
   color: #143251;
+  padding-top: 50px;
 }
 #before-body p {
-  /* Summer Camps at the Fort at Fort Monmouth Recreation Area in Tinton Falls is perfect for the child who wants to enjoy a little bit of everything, filling their days with crafts, active games and sports that are sure to fit your schedule. Sign up for half-day or full-day options and choose only the weeks you want. Plus, there's an option to sign up for the full summer as well as Flex Care options to suit your busy schedule, perfect for the working or busy mom and dad! */
-  position: absolute;
-  width: 622px;
-  height: 272px;
-  left: 409px;
-  top: 1156px;
-  font-family: Lato;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 42px;
-  /* or 236% */
   color: #000000;
+  text-align: left;
+  vertical-align: top;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-left: 420px;
+  padding-right: 420px;
 }
 
 /* =============
     body-buttons
 ============= */
-#body-buttons #b1 {
-  /* Contact Us Button */
-  position: absolute;
-  width: 199.46px;
-  height: 199.46px;
-  left: 85.43px;
-  top: 1473px;
-}
-#body-buttons #b1 h5 {
-  /* CONTACT US */
-  position: absolute;
-  width: 158px;
-  height: 26px;
-  left: 106px;
-  top: 1578px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  color: #143251;
+#body-buttons {
+  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  margin: 10px;
 }
 #body-buttons #b2 {
-  /* View Dates and Rates Button */
-  position: absolute;
-  width: 199.46px;
-  height: 199.46px;
-  left: 442.86px;
-  top: 1473.43px;
-}
-#body-buttons #b2 h5 {
-  /* VIEW DATES & RATES */
-  position: absolute;
-  width: 174px;
-  height: 58px;
-  left: 456px;
-  top: 1578px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #8F9F67;
+  padding-left: 200px;
 }
 #body-buttons #b3 {
-  /* View The Camp Rules Button */
-  position: absolute;
-  width: 199.46px;
-  height: 199.46px;
-  left: 799.87px;
-  top: 1473.43px;
-}
-#body-buttons #b3 h5 {
-  /* VIEW THE CAMP RULES */
-  position: absolute;
-  width: 187px;
-  height: 50px;
-  left: 806px;
-  top: 1300px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #D9BA7C;
+  padding-left: 200px;
 }
 #body-buttons #b4 {
-  /* Make a Payment Button */
-  position: absolute;
-  width: 199.46px;
-  height: 199.46px;
-  left: 1154.15px;
-  top: 1473.43px;
-}
-#body-buttons #b4 h5 {
-  /* MAKE A PAYMENT */
-  position: absolute;
-  width: 149px;
-  height: 70px;
-  left: 1179px;
-  top: 1578px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #143251;
+  padding-left: 200px;
 }
 
 /* =============
     body
 // ============= */
+#grid-container {
+  padding-bottom: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 @media (min-width: 1200px) {
   #grid-container {
     display: grid;
@@ -686,7 +580,7 @@ header > div #li3 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 50px;
-  height: 40vh;
+  height: 38vh;
 }
 @media (min-width: 1200px) {
   #grid-container ul {

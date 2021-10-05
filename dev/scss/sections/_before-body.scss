@@ -5,48 +5,30 @@
 #before-body {
 
     h3 {
-        /* Are you looking for a summer camp your child will love? */
-
-
-        position: absolute;
-        width: 1296px;
-        height: 46px;
-        left: 72px;
-        top: 1090px;
-
-        font-family: Raleway;
-        font-style: normal;
+        
+        font-family: "Raleway", Arial, serif;
+        font-style: regular;
         font-weight: bold;
+        text-align: center;
         font-size: 40px;
-        line-height: 35px;
-        /* or 87% */
-
-        text-align: justify;
-        text-transform: uppercase;
-
         color: #143251;
+        padding-top: 50px;
 
     }
 
     p {
-        /* Summer Camps at the Fort at Fort Monmouth Recreation Area in Tinton Falls is perfect for the child who wants to enjoy a little bit of everything, filling their days with crafts, active games and sports that are sure to fit your schedule. Sign up for half-day or full-day options and choose only the weeks you want. Plus, there's an option to sign up for the full summer as well as Flex Care options to suit your busy schedule, perfect for the working or busy mom and dad! */
-
-
-        position: absolute;
-        width: 622px;
-        height: 272px;
-        left: 409px;
-        top: 1156px;
-
-        font-family: Lato;
+        
+        font-family: "Lato", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
-        line-height: 42px;
-        /* or 236% */
-
-
         color: #000000;
+        text-align: left;
+        vertical-align: top;
+        line-height: 40px;
+        padding-top: 50px;
+        padding-left: 420px;
+        padding-right: 420px;
     }
 
 
