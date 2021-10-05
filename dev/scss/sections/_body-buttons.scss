@@ -3,10 +3,23 @@
 ============= */
 
 #body-buttons {
+
+    @include xl {
+        grid-template-areas: ". body-buttons .";
+    
+    }
     display: inline-block;
-    padding-top: 50px;
-    padding-bottom: 70px;
-    margin: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     #b2 {
         padding-left: 200px;
@@ -19,4 +32,5 @@
     #b4 {
         padding-left: 200px;
     }
+
 }
