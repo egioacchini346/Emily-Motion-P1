@@ -480,7 +480,7 @@ nav ul li a:visited:active {
     Header
 ============= */
 header {
-  position: fixed;
+  position: absolute;
   background-color: black;
   opacity: 10;
   width: 100%;
@@ -561,8 +561,8 @@ header > div aside a {
   vertical-align: top;
   line-height: 40px;
   padding-top: 50px;
-  padding-left: 360px;
-  padding-right: 360px;
+  padding-left: 460px;
+  padding-right: 460px;
 }
 
 /* =============
@@ -570,8 +570,8 @@ header > div aside a {
 ============= */
 #body-buttons {
   display: inline-block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: inline-block;
   vertical-align: top;
   width: 100%;
