@@ -27,7 +27,6 @@
 
         }
 
-
         li {
             background-position: center;
             background-size: cover;
@@ -37,6 +36,32 @@
             align-items: center;
             color: White;
             text-align: center;
+
+            >div {
+                #icon1{
+                    padding-bottom: 20px;
+                }
+
+                #icon2{
+                    padding-bottom: 20px;
+                }
+
+                #icon3{
+                    padding-bottom: 20px;
+                }
+
+                #icon4{
+                    padding-bottom: 20px;
+                }
+
+                #icon5{
+                    padding-bottom: 20px;
+                }
+
+                #icon6{
+                    padding-bottom: 20px;
+                }
+            }
 
 
             &:nth-child(1) {

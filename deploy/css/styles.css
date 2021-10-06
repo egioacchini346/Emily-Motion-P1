@@ -631,6 +631,24 @@ header > div aside a {
   color: White;
   text-align: center;
 }
+#grid-container ul li > div #icon1 {
+  padding-bottom: 20px;
+}
+#grid-container ul li > div #icon2 {
+  padding-bottom: 20px;
+}
+#grid-container ul li > div #icon3 {
+  padding-bottom: 20px;
+}
+#grid-container ul li > div #icon4 {
+  padding-bottom: 20px;
+}
+#grid-container ul li > div #icon5 {
+  padding-bottom: 20px;
+}
+#grid-container ul li > div #icon6 {
+  padding-bottom: 20px;
+}
 #grid-container ul li:nth-child(1) {
   background-image: url("../img/body/summertime_fun_camp_image.jpg");
 }
