@@ -1,20 +1,22 @@
 import {gsap} from "gsap";
+import { GSDevTools } from "gsap/GSDevTools";
+
+gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline()
 
 // reference the timeline | Do we want to start at the beginning or the end of the timeline? | What thing do you want to annimate? | Duration of the animation? | What do we want to do?
 //const heroHeight = document.querySelector("#heroimg");
 
-//Const maniTime = 0.5;
+//Const mainTime = 0.5;
+
+
 
 mainTL.from("#hero", {duration:2, alpha:0})
     .from("#logo", {rotationX: 360,rotationY: 0, rotationZ:0})
     .from("#li1", {duration:2, alpha:0})
     .from("#li2", {duration:2, alpha:0})
     .from("#li3", {duration:2, alpha:0})
-    //.from("#li1", {duration: .5, x: 3, scale: 1.25,ease: 'bounce'})
-    //.from("#li2", {duration: .5, x: 3, scale: 1.25,ease: 'bounce'})
-    //.from("#li3", {duration: .5, x: 3, scale: 1.25,ease: 'bounce'})
     .from("#h1", {duration:1, y:"+= 300", alpha:0, rotation:180},"madeUp")
     .from("#h2", {duration:2, y:"+= 300", alpha:0, rotation:180},"madeUp")
     .from("#pin", {duration:3, y:"+=300", alpha:0, rotation:180}, "madeUp")
@@ -38,3 +40,5 @@ mainTL.from("#hero", {duration:2, alpha:0})
     .from("#icon5, #n5", {duration: 1, x: 3, scale: 1.5,ease: 'bounce'})
     .from("#icon6, #n6", {duration: 1, x: 3, scale: 1.5,ease: 'bounce'});
   
+
+GSDevTools.create();

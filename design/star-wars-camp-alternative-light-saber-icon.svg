@@ -1,0 +1,31 @@
+<svg width="768" height="768" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="star-wars-camp-alternative-light-saber-icon">
+<rect width="768" height="768" fill="white"/>
+<g id="alternative-light-saber-bottom-breakable-parts">
+<g id="light-saber-bottom-part-4">
+<path id="handle-rectangle-1" d="M370.616 426.466H366.049V466.563H370.616V426.466Z" fill="#2C2A36"/>
+<path id="handle-rectangle-4" d="M403.173 426.466H398.606V466.563H403.173V426.466Z" fill="#2C2A36"/>
+<path id="handle-2" d="M398.606 475.542H370.662L370.393 425.508L370.421 407.355H398.606V475.542Z" fill="#B3BFC9" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="handle-rectangle-3" d="M392.686 426.466H388.119V466.563H392.686V426.466Z" fill="#2C2A36"/>
+<path id="light-shadow-2" d="M384.344 474.909H378.767C378.697 452.393 378.625 429.878 378.552 407.363H384.274L384.344 474.909Z" fill="#96ACBE"/>
+<path id="handle-rectangle-2" d="M381.54 426.466H376.973V466.563H381.54V426.466Z" fill="#2C2A36"/>
+</g>
+<g id="light-saber-bottom-part-3">
+<path id="charger" d="M404.264 380.956H400.907C398.42 380.956 396.403 382.973 396.403 385.461V404.388C396.403 406.876 398.42 408.893 400.907 408.893H404.264C406.751 408.893 408.767 406.876 408.767 404.388V385.461C408.767 382.973 406.751 380.956 404.264 380.956Z" fill="#96ACBE" stroke="#231F20" stroke-width="0.78" stroke-miterlimit="10"/>
+<path id="charger-shadow" opacity="0.72" d="M403.707 408.272H400.97C400.531 408.293 400.092 408.223 399.681 408.066C399.158 407.846 398.67 407.551 398.233 407.19V407.19C398.233 407.19 398.233 389.138 398.233 382.676C398.536 382.393 398.879 382.157 399.252 381.975C399.495 381.848 399.751 381.747 400.015 381.673C400.269 381.602 400.531 381.564 400.795 381.561C402.116 381.561 403.978 381.561 403.978 381.561C403.978 381.561 403.771 395.76 403.707 408.272Z" fill="#5F727E"/>
+<path id="shadow-next-to-charger" d="M398.606 381.537H370.421V407.363H398.606V381.537Z" fill="#5C5A71" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="dark-shadow-2" d="M384.156 382.135H378.552V406.737H384.156V382.135Z" fill="#2C2C37"/>
+</g>
+<g id="light-saber-bottom-part-2">
+<path id="handle-1" d="M398.606 381.537H370.663L370.394 345.872H375.109C375.109 345.872 375.191 342.354 375.339 335.853L378.369 334.356L381.239 332.933H398.606V381.537Z" fill="#B3BFC9" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="light-shadow-1" d="M384.157 381.537H378.583L378.552 335.021L381.551 333.535H384.09C384.103 349.533 384.125 365.534 384.157 381.537Z" fill="#96ACBE"/>
+</g>
+<g id="light-saber-bottom-part-1">
+<path id="top-of-saber" d="M396.457 310.602L368.014 293.88L366.525 293V370.912H375.105C375.183 361.117 375.259 351.318 375.335 341.517L381.235 332.945H398.602V311.876L396.457 310.602Z" fill="#454557" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="on-switch" d="M366.525 307.615H360V316.098H366.525V307.615Z" fill="#767782" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="off-switch" d="M366.525 334.864H360V343.347H366.525V334.864Z" fill="#767782" stroke="#231F20" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="dark-shadow-1" d="M379.769 334.055L374.75 341.318L374.282 298.265L379.785 301.51C379.777 312.358 379.772 323.207 379.769 334.055Z" fill="#2C2C37"/>
+</g>
+</g>
+</g>
+</svg>
