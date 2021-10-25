@@ -500,6 +500,20 @@ header > div aside a {
 /* =============
     Footer
 ============= */
+#preloader {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+#preloader > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
 /* =============
     hero
 ============= */

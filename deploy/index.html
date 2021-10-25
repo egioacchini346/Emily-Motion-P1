@@ -1,119 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/3a41377607.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Motion Demo</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/3a41377607.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Emily-Motion-P1</title>
+    </head>
 
-<body>
-    <header>
-        <div>
-            <aside id="logo">
-                <a href="#"><img src="img/header/logo.svg" alt="logo"></a>
-            </aside>
-    
-            <section>
-                <nav>
-                    <ul>
-                        <li id="li1"><a href="#">ABOUT</a></li>
-                        <li id="li2"><a href="#">PROGRAMS & ACTIVITIES</a></li>
-                        <li id="li3"><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
-    </header>
-    <section id="hero">
+    <body>
+        <section id="preloader">
             <div>
-                <section id="hero-content">
-                    <h1 id="h1">Summer Camps</h1>
-                    <h2 id="h2">Choose your own adventure</h2>
-                    <a id="pin" href="#"><img src="img/hero/map_pin_icon.svg" alt="map pin icon"></a>
-                </section>
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+                    <g id="shark-tank-camp-icon">
+                        <path fill="#fff" d="M0 0h768v768H0z" />
+                        <g id="shark-icon">
+                            <mask id="mask0_2:2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="148" y="147" width="426"
+                                height="426">
+                                <g id="circle-mask" clip-path="url(#clip0_2:2)">
+                                    <path id="Vector"
+                                        d="M361.009 573.018c117.642 0 213.009-95.367 213.009-213.009C574.018 242.367 478.651 147 361.009 147 243.367 147 148 242.367 148 360.009c0 117.642 95.367 213.009 213.009 213.009Z"
+                                        fill="#fff" />
+                                </g>
+                            </mask>
+                            <g mask="url(#mask0_2:2)">
+                                <path id="fourth-wave" opacity=".8"
+                                    d="M-43.516 354.79c59.993-25.62 71.914 32.541 137.157 32.541 65.243 0 65.243-33.844 130.486-33.844s65.26 33.844 130.502 33.844c65.243 0 65.26-33.844 130.52-33.844s63.77 7.31 123.933 32.575c25.399 10.661 23.841 11.71 24.163 39.242.322 27.532-33.51 27.802-33.239 55.334.271 27.532 34.238 27.076 34.56 54.675.322 27.6-33.595 27.938-33.273 55.47.321 27.532 49.613 59.65 24.265 70.463-59.571 25.383-71.458-32.524-136.243-32.524-64.786 0-64.786 33.844-129.572 33.844-64.785 0-64.785-33.844-129.571-33.844s-64.803 33.844-129.588 33.844c-64.786 0-63.28-7.496-123.019-32.574-25.4-10.661-24.299-11.423-25.095-38.921-.795-27.498 33.121-28.513 32.343-56.045-.78-27.532-34.696-26.568-35.475-54.151-.779-27.582 39.657-34.182 31.597-60.529-11.362-37.076-49.8-54.811-24.451-65.556Z"
+                                    fill="#EBFAFF" />
+                                <path id="third-wave" opacity=".87"
+                                    d="M69.918 353.792c59.994-25.637 71.914 32.524 137.157 32.524 65.243 0 65.243-33.844 130.486-33.844s65.26 33.844 130.503 33.844c65.243 0 65.26-33.844 130.519-33.844 65.26 0 63.77 7.31 123.933 32.574 25.4 10.661 23.842 11.71 24.163 39.242.322 27.532-33.493 27.888-33.239 55.42.254 27.532 34.238 27.075 34.56 54.675.322 27.599-33.595 27.938-33.273 55.487.322 27.549 49.614 59.633 24.265 70.463-59.57 25.383-71.457-32.524-136.243-32.524s-64.786 33.844-129.571 33.844c-64.786 0-64.786-33.844-129.572-33.844s-64.803 33.844-129.588 33.844c-64.786 0-63.279-7.48-123.019-32.558-25.399-10.678-24.298-11.439-25.094-38.921-.796-27.481 33.12-28.513 32.342-56.011-.78-27.499-34.696-26.585-35.56-54.151-.863-27.565 39.658-34.165 31.597-60.513-11.277-37.16-49.715-54.877-24.366-65.707Z"
+                                    fill="#AAEDFF" />
+                                <path id="shark-fin"
+                                    d="M291.08 321.724a103.316 103.316 0 0 1 2.167 34.166c-2.557 24.283-12.395 31.525-9.313 40.9 7.874 23.996 90.592 31.915 102.445 6.769 8.145-17.294-18.017-48.363-40.369-63.627a108.422 108.422 0 0 0-54.93-18.208Z"
+                                    fill="#6D6D6D" stroke="#3F3F3F" stroke-width="3" stroke-miterlimit="10" />
+                                <path id="second-wave" opacity=".51"
+                                    d="M646.03 396.012c-52.272-25.874-51.087-30.934-109.438-30.934s-58.351 32.626-116.703 32.626c-58.351 0-58.351-32.626-116.702-32.626s-58.351 32.626-116.618 32.626c-58.266 0-71.474-56.452-123.932-30.967-25.67 12.488 23.181 43.354 22.893 71.901-.288 28.547-32.934 28.192-33.222 56.739-.288 28.548 32.359 28.852 32.07 57.4-.287 28.547-32.934 28.209-33.273 56.739-.338 28.53-2.607 29.952 22.995 42.626 51.951 25.705 50.732 30.934 108.66 30.934 57.927 0 57.944-32.626 115.872-32.626s57.945 32.626 115.873 32.626c57.927 0 57.944-32.626 115.872-32.626s70.95 56.316 123.036 30.934c25.67-12.506-22.758-43.608-22.013-72.139.745-28.53 33.341-27.735 34.035-56.265.694-28.531-31.936-29.343-31.225-57.873.712-28.531 26.822-25.079 33.579-52.831 5.774-23.876 3.843-33.59-21.759-46.264Z"
+                                    fill="#029DC4" />
+                                <path id="first-wave"
+                                    d="M600.818 394.32c-46.057-22.794-45.008-27.245-96.416-27.245-51.409 0-51.392 28.768-102.8 28.768-51.409 0-51.409-28.768-102.801-28.768-51.391 0-51.408 28.768-102.817 28.768-51.409 0-62.889-49.785-109.116-27.279-22.623 11 20.421 38.193 20.167 63.339-.254 25.146-29.006 24.808-29.26 49.954-.254 25.146 28.498 25.383 28.244 50.563-.254 25.18-29.006 24.858-29.26 50.004-.254 25.146-2.303 26.381 20.32 37.55 45.719 22.641 44.652 27.244 95.688 27.244s51.036-28.767 102.072-28.767 51.053 28.767 102.089 28.767 51.036-28.767 102.089-28.767 62.483 49.632 108.371 27.295c22.623-10.999-20.048-38.413-19.439-63.542.61-25.129 29.379-24.435 30.006-49.581.626-25.146-28.211-25.823-27.601-50.918.609-25.096 23.706-22.084 29.599-46.519 5.181-21.169 3.488-29.63-19.135-40.866Z"
+                                    fill="#029DC4" />
+                            </g>
+                        </g>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_2:2">
+                            <path fill="#fff" transform="translate(148 147)" d="M0 0h426v426H0z" />
+                        </clipPath>
+                    </defs>
+                </svg>
             </div>
-            <img src="img/hero/hero-image.jpg" alt="hero image">
+        
         </section>
-    <section id="before-body">
-                <h3 id="h3">ARE YOU LOOKING FOR A SUMMER CAMP YOUR CHILD WILL LOVE?</h3>
-                <p id="p">Summer Camps at the Fort at Fort Monmouth Recreation Area in Tinton Falls is perfect for the child who wants
-                    to
-                    enjoy a little bit of everything, filling their days with crafts, active games and sports that are sure to
-                    fit
-                    your schedule. Sign up for half-day or full-day options and choose only the weeks you want. Plus, there's an
-                    option to sign up for the full summer as well as Flex Care options to suit your busy schedule, perfect for
-                    the
-                    working or busy mom and dad!</p>
-            </section>
-    <section id="body-buttons">
-                    <button id="b1">
-                        <a href="#"><img src="img/body/contact_us_button.svg" alt="contact us button"></a>
-                    </button>
-                    <button id="b2">
-                        <a href="#"><img src="img/body/view_dates_and_rates_button.svg" alt="view dates & rates button"></a>
-                    </button>
-                    <button id="b3">
-                        <a href="#"><img src="img/body/view_the_camp_rules_button.svg" alt="view the camp rule button"></a>
-                    </button>
-                    <button id="b4">
-                        <a href="#"><img src="img/body/make_a_payment_button.svg" alt="make a payment button"></a>
-                    </button>
-                </section>
-    <section id="grid-container">
-                        <ul>
-                            <li id="s1">
-                                <div>
-                                    <img id="icon1"src="img/body/sun_icon.svg" style="height: 74.27px;" alt="sun icon">
-                                    <h4 id="n1">SUMMERTIME FUN CAMP</h4>
-                                </div>
-                            </li>
-                            <li id="s2">
-                                <div>
-                                    <img id="icon2"src="img/body/jedi_icon.svg" style=" height: 76.15px;" alt="jedi icon">
-                                    <h4 id="n2">STAR WARS CAMP</h4>
-                                </div>
-                            </li>
-                            <li id="s3">
-                                <div>
-                                    <img id="icon3"src="img/body/lightning_bolt_icon.svg" style=" height: 76.5px;" alt="lightning icon">
-                                    <h4 id="n3">WIZARDING GAMES CAMP</h4>
-                                </div>
-                            </li>
-                            <li id="s4">
-                                <div>
-                                    <img id="icon4"src="img/body/hand_sign_icon.svg" style="height: 74.3px;" alt="hand sign icon">
-                                    <h4 id="n4">HUNGER GAMES CAMP</h4>
-                                </div>
-                            </li>
-                            <li id="s5">
-                                <div>
-                                    <img id="icon5"src="img/body/video_game_controller_icon.svg" style=" height: 49.22px;"
-                                        alt="video game controller icon">
-                                    <h4 id="n5">VIDEO GAMES CAMP</h4>
-                                </div>
-                            </li>
-                            <li id="s6">
-                                <div>
-                                    <img id="icon6"src="img/body/shark_icon.svg" style=" height: 52.02px;" alt="shark icon">
-                                    <h4 id="n6">SHARK TANK CAMP</h4>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-    <script type="module" src="js/scripts-min.js"></script>
-
-</body>
+        <header>
+                    <div>
+                        <aside id="logo">
+                            <a href="#"><img src="img/header/logo.svg" alt="logo"></a>
+                        </aside>
+                
+                        <section>
+                            <nav>
+                                <ul>
+                                    <li id="li1"><a href="#">ABOUT</a></li>
+                                    <li id="li2"><a href="#">PROGRAMS & ACTIVITIES</a></li>
+                                    <li id="li3"><a href="#">CONTACT</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </header>
+        <section id="hero">
+                            <div>
+                                <section id="hero-content">
+                                    <h1 id="h1">Summer Camps</h1>
+                                    <h2 id="h2">Choose your own adventure</h2>
+                                    <a id="pin" href="#"><img src="img/hero/map_pin_icon.svg" alt="map pin icon"></a>
+                                </section>
+                            </div>
+                            <img src="img/hero/hero-image.jpg" alt="hero image">
+                        </section>
+        <section id="before-body">
+                                    <h3 id="h3">ARE YOU LOOKING FOR A SUMMER CAMP YOUR CHILD WILL LOVE?</h3>
+                                    <p id="p">Summer Camps at the Fort at Fort Monmouth Recreation Area in Tinton Falls is perfect for the child who wants
+                                        to
+                                        enjoy a little bit of everything, filling their days with crafts, active games and sports that are sure to
+                                        fit
+                                        your schedule. Sign up for half-day or full-day options and choose only the weeks you want. Plus, there's an
+                                        option to sign up for the full summer as well as Flex Care options to suit your busy schedule, perfect for
+                                        the
+                                        working or busy mom and dad!</p>
+                                </section>
+        <section id="body-buttons">
+                                            <button id="b1">
+                                                <a href="#"><img src="img/body/contact_us_button.svg" alt="contact us button"></a>
+                                            </button>
+                                            <button id="b2">
+                                                <a href="#"><img src="img/body/view_dates_and_rates_button.svg" alt="view dates & rates button"></a>
+                                            </button>
+                                            <button id="b3">
+                                                <a href="#"><img src="img/body/view_the_camp_rules_button.svg" alt="view the camp rule button"></a>
+                                            </button>
+                                            <button id="b4">
+                                                <a href="#"><img src="img/body/make_a_payment_button.svg" alt="make a payment button"></a>
+                                            </button>
+                                        </section>
+        <section id="grid-container">
+                                                    <ul>
+                                                        <li id="s1">
+                                                            <div>
+                                                                <img id="icon1"src="img/body/sun_icon.svg" style="height: 74.27px;" alt="sun icon">
+                                                                <h4 id="n1">SUMMERTIME FUN CAMP</h4>
+                                                            </div>
+                                                        </li>
+                                                        <li id="s2">
+                                                            <div>
+                                                                <img id="icon2"src="img/body/jedi_icon.svg" style=" height: 76.15px;" alt="jedi icon">
+                                                                <h4 id="n2">STAR WARS CAMP</h4>
+                                                            </div>
+                                                        </li>
+                                                        <li id="s3">
+                                                            <div>
+                                                                <img id="icon3"src="img/body/lightning_bolt_icon.svg" style=" height: 76.5px;" alt="lightning icon">
+                                                                <h4 id="n3">WIZARDING GAMES CAMP</h4>
+                                                            </div>
+                                                        </li>
+                                                        <li id="s4">
+                                                            <div>
+                                                                <img id="icon4"src="img/body/hand_sign_icon.svg" style="height: 74.3px;" alt="hand sign icon">
+                                                                <h4 id="n4">HUNGER GAMES CAMP</h4>
+                                                            </div>
+                                                        </li>
+                                                        <li id="s5">
+                                                            <div>
+                                                                <img id="icon5"src="img/body/video_game_controller_icon.svg" style=" height: 49.22px;"
+                                                                    alt="video game controller icon">
+                                                                <h4 id="n5">VIDEO GAMES CAMP</h4>
+                                                            </div>
+                                                        </li>
+                                                        <li id="s6">
+                                                            <div>
+                                                                <img id="icon6"src="img/body/shark_icon.svg" style=" height: 52.02px;" alt="shark icon">
+                                                                <h4 id="n6">SHARK TANK CAMP</h4>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </section>
+        <script type="module" src="js/scripts-min.js"></script>
+    </body>
 
 </html>
