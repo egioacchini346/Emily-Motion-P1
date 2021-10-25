@@ -25,22 +25,55 @@
 
 
     >div {
-        .video-games{
-            visibility: hidden;
-        }
 
         //CSS Grid Option
         //grid-area: preloader;
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
         width: 100%;
 
-    
+
 
         svg {
-            
+            //#shark-tank-camp-icon{
+            //    display: none;
+            //}
+
+            #video-games-camp-icon {
+                display: none;
+            }
+
+            #star-wars-camp-alternative-light-saber-icon {
+                display: none;
+            }
+
+            #star-wars-camp-icon {
+                display: none;
+            }
+
+            #wizarding-games-camp-icon {
+                display: none;
+            }
+
+            #wizarding-games-camp-wand-glow {
+                display: none;
+            }
+
+            #summertime-fun-camp-icon {
+                display: none;
+            }
+
+            #hunger-games-camp-icon {
+                display: none;
+            }
+
         }
+
+
+
     }
+
+
 }

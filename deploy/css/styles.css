@@ -516,15 +516,34 @@ header > div aside a {
   background-color: white;
 }
 #preloader > div {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
 }
-#preloader > div .video-games {
-  visibility: hidden;
+#preloader > div svg #video-games-camp-icon {
+  display: none;
 }
+#preloader > div svg #star-wars-camp-alternative-light-saber-icon {
+  display: none;
+}
+#preloader > div svg #star-wars-camp-icon {
+  display: none;
+}
+#preloader > div svg #wizarding-games-camp-icon {
+  display: none;
+}
+#preloader > div svg #wizarding-games-camp-wand-glow {
+  display: none;
+}
+#preloader > div svg #summertime-fun-camp-icon {
+  display: none;
+}
+#preloader > div svg #hunger-games-camp-icon {
+  display: none;
+}
+
 /* =============
     hero
 ============= */
