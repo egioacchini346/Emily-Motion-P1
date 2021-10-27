@@ -356,10 +356,6 @@ template {
   z-index: 1500;
 }
 
-.shark-tank {
-  display: none;
-}
-
 figure {
   margin: 0;
   padding: 0;
@@ -522,25 +518,22 @@ header > div aside a {
   align-items: center;
   width: 100%;
 }
-#preloader > div svg #video-games-camp-icon {
+#preloader > div svg #sharktankcampicon {
   display: none;
 }
-#preloader > div svg #star-wars-camp-alternative-light-saber-icon {
+#preloader > div svg #starwarscampalternativelightsabericon {
   display: none;
 }
-#preloader > div svg #star-wars-camp-icon {
+#preloader > div svg #starwarscampicon {
   display: none;
 }
-#preloader > div svg #wizarding-games-camp-icon {
+#preloader > div svg #wizardinggamescampicon {
   display: none;
 }
-#preloader > div svg #wizarding-games-camp-wand-glow {
+#preloader > div svg #summertimefuncampicon {
   display: none;
 }
-#preloader > div svg #summertime-fun-camp-icon {
-  display: none;
-}
-#preloader > div svg #hunger-games-camp-icon {
+#preloader > div svg #hungergamescampicon {
   display: none;
 }
 
