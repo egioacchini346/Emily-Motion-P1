@@ -28,12 +28,14 @@ const mainTL = gsap.timeline()
 .from("#green-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
 .from("#big-bottom-right-gray-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
 .from(".plusbuttonbottom", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-.from(".plusbuttontop", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}}) //need to get the PLUS TO SPIN
+.from(".plusbuttontop", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}}) 
+
+//need to get the PLUS TO SPIN
+//.from("#plus-button_2", {rotation:"560", axis: "y"}, "start")
+//.from("#plus-button-shadow", {rotation:"560", axis: "y"}, "start")
 .from("#controller-color", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
 .from("#controller-shadow", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
 //.addPause("#controller-shadow+=0") ADD PAUSE 
-
-
 
 .from("#controller-shadow", {duration: .20 , scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#controller-color", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
@@ -41,36 +43,42 @@ const mainTL = gsap.timeline()
 .from(".plusbuttonbottom", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#big-bottom-right-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#green-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
+.to("#red-button", { duration: 2,  ease: "none", x: -175})
+//red button needs to go at same time as other buttons, glow too
 .from("#yellow-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#blue-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#small-right-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#small-left-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#big-left-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
 .from("#white-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-//RED BUTTON SCALES BIGGER AND MOVES TOWARDS MIDDLE/CENTER/GLOW
-//saber
+
+//sabe
+.from("#light-saber-bottom-part-1", {rotation: 450, scale: 2, y: 77, x: 250},"start")
+.from("#light-saber-bottom-part-2", {rotation: 450, scale: 2, y: 48, x: 145},"start")
+.from("#light-saber-bottom-part-3", {rotation: -270, scale: 2, y: 0, x: 49},"start")
+.from("#light-saber-bottom-part-4", {rotation: -270, scale: 2, y: -35, x: 0},"start")
+
+
 //wand
 
 //sun animation
 
-//.from("#yellow-circle", { opacity:0})
-//.to("#yellow-circle", { opacity:1, duration: .5})
-//.from("#sun-stroke-outline", { opacity:0})
-//.to("#sun-stroke-outline", { opacity:1, duration: .5})
-//.from(".ray", { opacity:0, stagger: .25})
-//.to(".ray", { opacity:1, duration: .30})
-
+.from("#yellow-circle", { opacity:0})
+.to("#yellow-circle", { opacity:1, duration: .5})
+.from("#sun-stroke-outline", { opacity:0})
+.to("#sun-stroke-outline", { opacity:1, duration: .5})
+.from(".ray", { opacity:0, stagger: .25})
+.to(".ray", { opacity:1, duration: .30})
 //rays falling off sun circle
-
-//.to("#yellow-circle", { opacity:0, duration: .5})
-//.to("#sun-stroke-outline", { duration:.5, scale: 1, strokeWidth:15})
+.to("#yellow-circle", { opacity:0, duration: .5})
+.to("#sun-stroke-outline", { duration:.5, scale: 1, strokeWidth:15})
 
 
 //hunger games animation
     //arrow has to fly
 
-//.from("#bird", { opacity:0})
-//.to("#bird", { opacity:1, duration: .70})
+.from("#bird", { opacity:0})
+.to("#bird", { opacity:1, duration: .70})
    
 
 
