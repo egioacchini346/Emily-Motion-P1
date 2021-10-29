@@ -518,25 +518,6 @@ header > div aside a {
   align-items: center;
   width: 100%;
 }
-#preloader > div svg #sharktankcampicon {
-  display: none;
-}
-#preloader > div svg #videogamescampicon {
-  display: none;
-}
-#preloader > div svg #starwarscampicon {
-  display: none;
-}
-#preloader > div svg #wizardinggamescampicon {
-  display: none;
-}
-#preloader > div svg #summertimefuncampicon {
-  display: none;
-}
-#preloader > div svg #hungergamescampicon {
-  display: none;
-}
-
 /* =============
     hero
 ============= */
