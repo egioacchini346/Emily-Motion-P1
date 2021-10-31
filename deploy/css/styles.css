@@ -511,13 +511,13 @@ header > div aside a {
   z-index: 1000;
   background-color: white;
 }
-#preloader > div {
-  position: absolute;
-  display: flex;
+#preloader > div svg {
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 /* =============
     hero
 ============= */

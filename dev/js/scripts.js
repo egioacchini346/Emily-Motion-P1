@@ -83,6 +83,7 @@ function summertimefuncampicon(){
     tl.to("#sun-stroke-outline", { opacity:1, duration: .5})
     tl.from(".ray", { opacity:0, stagger: .25})
     tl.to(".ray", { opacity:1, duration: .30})
+    //tl.to("#yellow-ray-1", { duration: 2.5, x:90, y:-30 })
     //rays falling off sun circle
     tl.to("#yellow-circle", { opacity:0, duration: .5})
     tl.to("#sun-stroke-outline", { duration:.5, scale: 1, strokeWidth:15})
