@@ -13,11 +13,13 @@ const mainTL = gsap.timeline()
 
 //Const mainTime = 0.5;
 
-//shark
-//controller
+function shark(){
+    const tl=gsap.timeline();
+    tl.from ("shark", {duration: 1});
+    return tl;
+}
 
-
-function videogamescampicon(){
+function controller(){
     const tl=gsap.timeline();
     tl.from("#white-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     tl.from("#big-left-gray-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
@@ -36,18 +38,18 @@ function videogamescampicon(){
     //.from("#plus-button-shadow", {rotation:"560", axis: "y"}, "start")
     tl.from("#controller-color", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     tl.from("#controller-shadow", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    //.addPause("#controller-shadow+=0") ADD PAUSE 
+
     
-    tl.from("#controller-shadow", {duration: .20 , scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
+    tl.from("#controller-shadow", {duration: .20 , scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"+=3")
     tl.from("#controller-color", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
     tl.from(".plusbuttontop", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
     tl.from(".plusbuttonbottom", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
     tl.from("#big-bottom-right-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
     tl.from("#green-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.to("#red-button", { duration: 2,  ease: "none", x: -175})
+    tl.to("#red-button", { duration: 2,  ease: "none", x: -175},"same")
     //red button needs to go at same time as other buttons, glow too
-    tl.from("#yellow-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from("#blue-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
+    tl.from("#yellow-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"same")
+    tl.from("#blue-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"same")
     tl.from("#small-right-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
     tl.from("#small-left-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
     tl.from("#big-left-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
@@ -57,7 +59,7 @@ function videogamescampicon(){
 
 
 //saber
-function starwarscampalternativelightsabericon(){
+function alternativelightsaber(){
     const tl=gsap.timeline();
     tl.from("#light-saber-bottom-part-1", {rotation: 450, scale: 2, y: 67, x: 230})
     tl.from("#light-saber-bottom-part-2", {rotation: 450, scale: 2, y: 48, x: 145})
@@ -70,12 +72,16 @@ function starwarscampalternativelightsabericon(){
     return tl;
 }
 
+function lightsaber(){
+}
 
 
 //wand
+function wand(){
+}
 
 //sun animation
-function summertimefuncampicon(){
+function sun(){
     const tl=gsap.timeline();
     tl.from("#yellow-circle", { opacity:0})
     tl.to("#yellow-circle", { opacity:1, duration: .5})
@@ -92,7 +98,12 @@ function summertimefuncampicon(){
 
 //hunger games animation
     //arrow has to fly
-    function hungergamescampicon(){
+
+    function arrow(){
+    }
+
+
+    function bird(){
         const tl=gsap.timeline();
         tl.from("#bird", { opacity:0})
         tl.to("#bird", { opacity:1, duration: .70})
@@ -103,41 +114,45 @@ function summertimefuncampicon(){
 
 
 
-mainTL.from("#hero", {duration:2, alpha:0})
-    .from("#logo", {rotationX: 360,rotationY: 0, rotationZ:0})
-    .from("#li1", {duration:.75, alpha:0})
-    .from("#li2", {duration:.75, alpha:0})
-    .from("#li3", {duration:.75, alpha:0})
-    .from("#h1", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
-    .from("#h2", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
-    .from("#pin", {duration:.75, y:"+=300", alpha:0, rotation:180}, "madeUp")
-    .from("#pin", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#h3", {duration:.75, alpha:0,y:1000})
-    .from("#p", {duration:.75, alpha:0,y:1000})
-    .from("#b1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#b2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#b3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#b4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#s1", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-    .from("#s2", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-    .from("#s3", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-    .from("#s4", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-    .from("#s5", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-    .from("#s6", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-    .from("#icon1, #n1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon2, #n2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon3, #n3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon4, #n4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon5, #n5", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'});
+///mainTL.from("#hero", {duration:2, alpha:0})
+ //   .from("#logo", {rotationX: 360,rotationY: 0, rotationZ:0})
+  //  .from("#li1", {duration:.75, alpha:0})
+  //  .from("#li2", {duration:.75, alpha:0})
+   // .from("#li3", {duration:.75, alpha:0})
+   // .from("#h1", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
+   // .from("#h2", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
+   // .from("#pin", {duration:.75, y:"+=300", alpha:0, rotation:180}, "madeUp")
+  //  .from("#pin", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+   // .from("#h3", {duration:.75, alpha:0,y:1000})
+  //  .from("#p", {duration:.75, alpha:0,y:1000})
+   // .from("#b1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+  //  .from("#b2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+   // .from("#b3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+  //  .from("#b4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+  //  .from("#s1", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+  //  .from("#s2", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+  //  .from("#s3", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+  //  .from("#s4", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+  //  .from("#s5", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+   // .from("#s6", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+  //  .from("#icon1, #n1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+   // .from("#icon2, #n2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+   //.from("#icon3, #n3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+   // .from("#icon4, #n4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+   // .from("#icon5, #n5", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    //.from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'});
   
     
     
+    mainTL.add(shark())
+    mainTL.add(controller())
+    mainTL.add(alternativelightsaber())
+    mainTL.add(lightsaber())
+    mainTL.add(wand())
+    mainTL.add(sun())
+    mainTL.add(arrow())
+    mainTL.add(bird())
     
-    mainTL.add(videogamescampicon())
-    mainTL.add(starwarscampalternativelightsabericon())
-    mainTL.add(summertimefuncampicon())
-    mainTL.add(hungergamescampicon())
     
 GSDevTools.create();
 MotionPathPlugin.create();
