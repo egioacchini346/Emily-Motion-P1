@@ -17,15 +17,15 @@ const mainTL = gsap.timeline()
 function sun(){
     const tl=gsap.timeline();
     tl.from("#yellow-circle", { opacity:0})
-    tl.to("#yellow-circle", { opacity:1, duration: .5})
-    tl.from("#sun-stroke-outline", { opacity:0})
-    tl.to("#sun-stroke-outline", { opacity:1, duration: .5})
-    tl.from(".ray", { opacity:0, stagger: .25})
-    tl.to(".ray", { opacity:1, duration: .30})
+    .to("#yellow-circle", { opacity:1, duration: .5})
+    .from("#sun-stroke-outline", { opacity:0})
+    .to("#sun-stroke-outline", { opacity:1, duration: .5})
+    .from(".ray", { opacity:0, stagger: .25})
+    .to(".ray", { opacity:1, duration: .30})
     //tl.to("#yellow-ray-1", { duration: 2.5, x:90, y:-30 })
     //rays falling off sun circle
-    tl.to("#yellow-circle", { opacity:0, duration: .5})
-    tl.to("#sun-stroke-outline", { duration:.5, scale: 1, strokeWidth:15})
+    .to("#yellow-circle", { opacity:0, duration: .5})
+    .to("#sun-stroke-outline", { duration:.5, scale: 1, strokeWidth:15})
     return tl;
 }
 
