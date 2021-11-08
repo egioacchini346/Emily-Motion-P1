@@ -8,7 +8,7 @@ gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
 gsap.set("#alternativelightsaber", {y: -79, scale: 2, transformOrigin:"center"});
-
+gsap.set("#yellow-circle", {opacity: 0});
 
 const mainTL = gsap.timeline()
 
