@@ -9,6 +9,7 @@ gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
 gsap.set("#alternativelightsaber", {y: -79, scale: 2, transformOrigin:"center"});
 
+
 const mainTL = gsap.timeline()
 
 // reference the timeline | Do we want to start at the beginning or the end of the timeline? | What thing do you want to annimate? | Duration of the animation? | What do we want to do?
@@ -82,15 +83,23 @@ function lightsaber(){
 function lightsaberbottombreakableparts(){
     const tl=gsap.timeline();
     
-    tl.to(".light-saber", { opacity:0, duration: .5}, "sametime")
+    tl.to(".light-saber", { opacity:0, duration: .15}, "sametime")
     tl.to("#lightsaberbottompart1", {x:500, stagger: .10}, "sametime")
     .to("#lightsaberbottompart2", {x:-500, stagger: .10})
     .to("#lightsaberbottompart3", {x:500, stagger: .10})
     .to("#lightsaberbottompart4", {x:-500, stagger: .10})
-   
+    tl.from(".wand-wo-glow", { opacity:0}, "sametime")
+    tl.to(".wand-wo-glow", { opacity:1, duration: .5}, "sametime")
+    tl.from(".wand-wo-glow", { opacity:0}, "sametime")
+    tl.to(".wand-wo-glow", { opacity:1, duration: .5}, "sametime")
     return tl;
 }
 
+function wand(){
+    const tl=gsap.timeline();
+    tl.to(".wand-wo-glow", { opacity:0})
+    return tl;
+}
 
 
 
@@ -105,6 +114,7 @@ function sun(){
     tl.from(".ray", { opacity:0, stagger: .25})
     tl.to(".ray", { opacity:1, duration: .30})
     //rays falling off sun circle
+    tl.from(".ray", { opacity:0, stagger: .25})//fill in for rays disappearing
     tl.to("#yellow-circle-2", { opacity:0, duration: .5})
     tl.to("#sun-stroke-outline", { duration:.5, scale: 1, strokeWidth:15})
     return tl;
@@ -164,6 +174,7 @@ function bird(){
     mainTL.add(alternativelightsaberrotatingvertically())
     mainTL.add(lightsaber())
     mainTL.add(lightsaberbottombreakableparts())
+    mainTL.add(wand())
     mainTL.add(sun())
     mainTL.add(arrow())
     mainTL.add(bird())
