@@ -519,22 +519,7 @@ header > div aside a {
 #preloader > div svg g #shark {
   display: none;
 }
-#preloader > div svg g #controller {
-  display: none;
-}
-#preloader > div svg g #lightsaber {
-  display: none;
-}
 #preloader > div svg g #wand {
-  display: none;
-}
-#preloader > div svg g #sun {
-  display: none;
-}
-#preloader > div svg g #arrow {
-  display: none;
-}
-#preloader > div svg g #bird {
   display: none;
 }
 
