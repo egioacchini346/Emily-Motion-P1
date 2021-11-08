@@ -511,10 +511,31 @@ header > div aside a {
   z-index: 1000;
 }
 #preloader > div svg {
+  position: absolute;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+}
+#preloader > div svg g #shark {
+  display: none;
+}
+#preloader > div svg g #controller {
+  display: none;
+}
+#preloader > div svg g #lightsaber {
+  display: none;
+}
+#preloader > div svg g #wand {
+  display: none;
+}
+#preloader > div svg g #sun {
+  display: none;
+}
+#preloader > div svg g #arrow {
+  display: none;
+}
+#preloader > div svg g #bird {
+  display: none;
 }
 
 /* =============

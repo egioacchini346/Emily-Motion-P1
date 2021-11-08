@@ -13,74 +13,7 @@ const mainTL = gsap.timeline()
 
 //Const mainTime = 0.5;
 
-function shark(){
-    const tl=gsap.timeline();
-    tl.from ("shark", {duration: 1});
-    return tl;
-}
 
-function controller(){
-    const tl=gsap.timeline();
-    tl.from("#white-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#big-left-gray-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#small-left-gray-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#small-right-gray-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#blue-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#yellow-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#red-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#green-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#big-bottom-right-gray-button", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from(".plusbuttonbottom", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from(".plusbuttontop", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}}) 
-    
-    //need to get the PLUS TO SPIN
-    //.from("#plus-button_2", {rotation:"560", axis: "y"}, "start")
-    //.from("#plus-button-shadow", {rotation:"560", axis: "y"}, "start")
-    tl.from("#controller-color", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    tl.from("#controller-shadow", {duration: .20, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-
-    
-    tl.from("#controller-shadow", {duration: .20 , scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"+=3")
-    tl.from("#controller-color", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from(".plusbuttontop", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from(".plusbuttonbottom", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from("#big-bottom-right-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from("#green-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.to("#red-button", { duration: 2,  ease: "none", x: -175},"same")
-    //red button needs to go at same time as other buttons, glow too
-    tl.from("#yellow-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"same")
-    tl.from("#blue-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"same")
-    tl.from("#small-right-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from("#small-left-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from("#big-left-gray-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    tl.from("#white-button", {duration: .20, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}})
-    return tl;
-}
-
-
-//saber
-function alternativelightsaber(){
-    const tl=gsap.timeline();
-    tl.from("#light-saber-bottom-part-1", {rotation: 450, scale: 2, y: 67, x: 230})
-    tl.from("#light-saber-bottom-part-2", {rotation: 450, scale: 2, y: 48, x: 145})
-    tl.from("#light-saber-bottom-part-3", {rotation: -270, scale: 2, y: 0, x: 49})
-    tl.from("#light-saber-bottom-part-4", {rotation: -270, scale: 2, y: -35, x: 0})
-    tl.to("#light-saber-bottom-part-1", {x:500})
-    tl.to("#light-saber-bottom-part-2", {x:-500})
-    tl.to("#light-saber-bottom-part-3", {x:500})
-    tl.to("#light-saber-bottom-part-4", {x:-500})
-    return tl;
-}
-
-function lightsaber(){
-}
-
-
-//wand
-function wand(){
-}
-
-//sun animation
 function sun(){
     const tl=gsap.timeline();
     tl.from("#yellow-circle", { opacity:0})
@@ -96,20 +29,6 @@ function sun(){
     return tl;
 }
 
-//hunger games animation
-    //arrow has to fly
-
-    function arrow(){
-    }
-
-
-    function bird(){
-        const tl=gsap.timeline();
-        tl.from("#bird", { opacity:0})
-        tl.to("#bird", { opacity:1, duration: .70})
-        return tl;
-    }
-   
 
 
 
@@ -143,15 +62,10 @@ function sun(){
     //.from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'});
   
     
-    
-    mainTL.add(shark())
-    mainTL.add(controller())
-    mainTL.add(alternativelightsaber())
-    mainTL.add(lightsaber())
-    mainTL.add(wand())
+
     mainTL.add(sun())
-    mainTL.add(arrow())
-    mainTL.add(bird())
+   
+    
     
     
 GSDevTools.create();

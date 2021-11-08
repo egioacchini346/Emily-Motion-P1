@@ -8,10 +8,47 @@
     >div {
 
         svg {
+            position: absolute;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 100%;
+
+            g {
+
+                #shark {
+                    display: none;
+                }
+
+                #controller {
+                    display:none;
+                }
+
+                //alternativelightsaber{
+                    //display: none;
+                //}
+
+                #lightsaber {
+                    display: none;
+                }
+
+                #wand {
+                    display: none;
+                }
+
+                #sun {
+                    display: none;
+                }
+
+                #arrow {
+                    display: none;
+                }
+
+                #bird {
+                    display: none;
+                }
+            }
+            
+            
         }
 
     }
