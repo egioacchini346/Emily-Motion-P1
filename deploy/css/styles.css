@@ -378,6 +378,10 @@ button {
   border: none;
 }
 
+.hidden {
+  display: hidden;
+}
+
 /* =============
     Typography
 ============= */
@@ -514,6 +518,9 @@ header > div aside a {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+#preloader > div svg .hidden {
+  display: none;
 }
 #preloader > div svg g #shark {
   display: none;

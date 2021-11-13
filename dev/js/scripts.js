@@ -8,12 +8,12 @@ gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
 gsap.set(".preloader-animation",{y: -200, scale: .70, transformOrigin:"center"});
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
-gsap.set("#alternativelightsaber", {y: -250, scale: 2, transformOrigin:"center"});
+gsap.set("#alternativelightsaber", {y: -245, scale: 2, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
 gsap.set("#yellow-circle", {opacity: 0});
 gsap.set("#sun-ray-path", {scale: .70, y: -210, x: 10, rotate: -3,transformOrigin:"center"});
 gsap.set("#arrow", {x: 250, y: 130, opacity: 0, scale: 0, transformOrigin: "center"});
-gsap.set("#arrow-path", {x: 320, y: 110});
+gsap.set("#arrow-path", {x: 380, y: 140});
 
 
 const mainTL = gsap.timeline()
