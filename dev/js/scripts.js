@@ -12,7 +12,7 @@ gsap.set("#alternativelightsaber", {y: -250, scale: 2, transformOrigin:"center"}
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
 gsap.set("#yellow-circle", {opacity: 0});
 gsap.set("#sun-ray-path", {scale: .70, y: -210, x: 10, rotate: -3,transformOrigin:"center"});
-gsap.set("#arrow", {x: 250, y: 130, transformOrigin: "center"});
+gsap.set("#arrow", {x: 250, y: 130, opacity: 0, scale: 0, transformOrigin: "center"});
 gsap.set("#arrow-path", {x: 320, y: 120});
 
 
@@ -133,8 +133,7 @@ function sun(){
 
 function arrow(){
     const tl=gsap.timeline();
-    tl.from("#arrow", { opacity:0, scale: 0})
-    .to("#arrow", {duration: 1.5, ease: "power1.In", opacity: 1, scale: .70, motionPath:{path:"#arrow-path", align:"#arrow-path", alignOrigin: [0.5, 0.5]}})
+    tl.to("#arrow", {duration: 1, ease: "power1.In", opacity: 1, scale: .70, motionPath:{path:"#arrow-path", align:"#arrow-path", alignOrigin: [0.5, 0.5]}})
     
     //tl.to("#arrow", { opacity:1, duration: .20}) //need arrow to move
     return tl;
