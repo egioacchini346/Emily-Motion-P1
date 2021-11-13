@@ -5,11 +5,15 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
+gsap.set(".preloader-animation",{y: -200, scale: .70, transformOrigin:"center"});
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
-gsap.set("#alternativelightsaber", {y: -72, scale: 2, transformOrigin:"center"});
+gsap.set("#alternativelightsaber", {y: -250, scale: 2, transformOrigin:"center"});
+gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
 gsap.set("#yellow-circle", {opacity: 0});
-gsap.set("#arrow-path", {x: 250, y: 400});
+gsap.set("#sun-ray-path", {scale: .70, y: -210, x: 10, rotate: -3,transformOrigin:"center"});
+gsap.set("#arrow", {x: 250, y: 130, transformOrigin: "center"});
+gsap.set("#arrow-path", {x: 320, y: 120});
 
 
 const mainTL = gsap.timeline()
@@ -58,17 +62,17 @@ function controller(){
 
 function alternativelightsaber(){
     const tl=gsap.timeline();
-    tl.from("#light-saber-bottom-part-2", {x:500, stagger: .10}, "same-time")
-    .from("#light-saber-bottom-part-3", {x:-500, stagger: .10},"same-time")
-    .from("#light-saber-bottom-part-1", {x:500, stagger: .10},"same-time-2")
-    .from("#light-saber-bottom-part-4", {x:-500, stagger: .10},"same-time-2")
+    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10}, "same-time")
+    .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10},"same-time")
+    .from("#light-saber-bottom-part-1", {x:1040, stagger: .10},"same-time-2")
+    .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10},"same-time-2")
     .to("#red-button", { duration:.10, opacity: 0}) 
     return tl;
 }
 
 function alternativelightsaberrotatingvertically(){
     const tl=gsap.timeline();
-    tl.to("#alternativelightsaber", {rotation: -90, scale: 1, y:183})
+    tl.to("#alternativelightsaber", {rotation: -90, scale: .70, y:-72.90, x:-1})
     .from("#lightsaberbottombreakableparts", { opacity:0})
     .to("#lightsaberbottombreakableparts", { opacity:1, duration: .10})
     .to("#alternativelightsaber", {opacity: 0},"-=.38")
@@ -78,7 +82,7 @@ function alternativelightsaberrotatingvertically(){
 
 function lightsaber(){
     const tl=gsap.timeline();
-    tl.from(".light-saber", { opacity:0})
+    tl.from(".light-saber", {opacity:0})
     .to(".light-saber", { opacity:1, duration: .5})
     return tl;
 }
@@ -87,10 +91,10 @@ function lightsaberbottombreakableparts(){
     const tl=gsap.timeline();
     
     tl.to(".light-saber", { opacity:0, duration: .15}, "sametime")
-    tl.to("#lightsaberbottompart1", {x:500, stagger: .10}, "sametime")
-    .to("#lightsaberbottompart2", {x:-500, stagger: .10})
-    .to("#lightsaberbottompart3", {x:500, stagger: .10})
-    .to("#lightsaberbottompart4", {x:-500, stagger: .10})
+    tl.to("#lightsaberbottompart1", {x:1040, stagger: .10}, "sametime")
+    .to("#lightsaberbottompart2", {x:-1040, stagger: .10})
+    .to("#lightsaberbottompart3", {x:1040, stagger: .10})
+    .to("#lightsaberbottompart4", {x:-1040, stagger: .10})
     tl.from(".wand-wo-glow", { opacity:0}, "sametime")
     //wand
     //tl.to(".wand-wo-glow", { opacity:1, duration: .5}, "sametime")
@@ -118,16 +122,19 @@ function sun(){
     .from(".ray", { opacity:0, stagger: .10})
     .to(".ray", { opacity:1, stagger: .10})
     .to(".ray", { opacity:0, stagger: .10},"-=2.2")
+    //.to("#orange-ray-1", {duration: .10, ease: "power1.Out", motionPath:{path:"#OR1", align:"#OR1", alignOrigin: [0.5, 0.5]}})
     .to("#yellow-circle-2", { opacity:0, stagger: .3})
     .to("#sun-stroke-outline", { duration:.3, scale: 1, strokeWidth:15})
     return tl;
+
+
 }
 
 
 function arrow(){
     const tl=gsap.timeline();
-    tl.from("#arrow", { opacity:0, x: 500})
-    .to("#arrow", {duration: .20, ease: "power1.In", scale:1, motionPath:{path:"#arrow-path", align:"#arrow-path", alignOrigin: [0.5, 0.5]}})
+    tl.from("#arrow", { opacity:0, scale: 0})
+    .to("#arrow", {duration: 1.5, ease: "power1.In", opacity: 1, scale: .70, motionPath:{path:"#arrow-path", align:"#arrow-path", alignOrigin: [0.5, 0.5]}})
     
     //tl.to("#arrow", { opacity:1, duration: .20}) //need arrow to move
     return tl;
