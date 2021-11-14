@@ -6,10 +6,14 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
 gsap.set(".preloader-animation",{y: -200, scale: .70, transformOrigin:"center"});
+gsap.set(".waves",{ y: 120, scale: 2, transformOrigin:"center"});
+gsap.set("#first-wave",{ y: 130, transformOrigin:"center"});
+gsap.set("#shark-fin",{ y: 25, scale: 2});
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
 gsap.set("#alternativelightsaber", {y: -245, scale: 2, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
+//gsap.set(".wandwoglow", {scale: 0, x: 3, y:-120, transformOrigin:"center"});
 gsap.set("#yellow-circle", {opacity: 0});
 gsap.set("#sun-ray-path", {scale: .70, y: -210, x: 10, rotate: -3,transformOrigin:"center"});
 gsap.set("#arrow", {x: 250, y: 130, opacity: 0, scale: 0, transformOrigin: "center"});
@@ -22,10 +26,33 @@ const mainTL = gsap.timeline()
 //const heroHeight = document.querySelector("#heroimg");
 
 //Const mainTime = 0.5;
+var firstwave = document.querySelector("#first-wave");
+var secondwave = document.querySelector("#second-wave");
+
+var bBoxGroup = firstwave.getBBox();
+var bBoxGroup2 = secondwave.getBBox();
+
+function shark(){
+    const tl=gsap.timeline();
+    tl.from ("#shark", {opacity: 0})
+    .to("#first-wave", {duration:.7, x: -bBoxGroup.width / 2, ease: "none", repeat:4}, "start")
+    .to("#second-wave", {duration: .7, x: bBoxGroup2.width / 2, ease: "none", repeat:5}, "start")
+    .to("#third-wave", {duration: .7, x: -bBoxGroup.width / 2, ease: "none", repeat:5}, "start")
+    .to("#fourth-wave",  {duration: .7, x: bBoxGroup2.width / 2, ease: "none", repeat:4}, "start")
+    .to("#shark", {duration: 1, opacity: 1}, "start")
+    .to("#shark-fin", {duration: .2, x:100}, "start")
+    .to("#shark", {duration: 1, scale: .086, y: -427, x: 11}, "start")
+   
+    
+  
+    return tl; 
+}
 
 function controller(){
     const tl=gsap.timeline();
-    tl.from("#white-button", {duration: .15, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
+    tl.from("#white-button", {duration: .15, opacity: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
+    .to("#white-button", {duration: .15, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
+    .to("#shark", {opacity: 0, stagger: {from: "edges", axis: "y"}})
     .from("#big-left-gray-button", {duration: .15, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     .from("#small-left-gray-button", {duration: .15, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     .from("#small-right-gray-button", {duration: .15, scale: 0, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
@@ -103,9 +130,9 @@ function lightsaberbottombreakableparts(){
     return tl;
 }
 
-//function wand(){
-    //const tl=gsap.timeline();
-    //tl.to(".wand-wo-glow", { opacity:0})
+//function wandwoglow(){
+  //  const tl=gsap.timeline();
+  //  tl.to(".wandwoglow", { opacity:1, scale: .5})
     //return tl;
 //}
 
@@ -121,8 +148,17 @@ function sun(){
     .to("#sun-stroke-outline", { opacity:1, duration: .3})
     .from(".ray", { opacity:0, stagger: .10})
     .to(".ray", { opacity:1, stagger: .10})
-    .to(".ray", { opacity:0, stagger: .10},"-=2.2")
-    //.to("#orange-ray-1", {duration: .10, ease: "power1.Out", motionPath:{path:"#OR1", align:"#OR1", alignOrigin: [0.5, 0.5]}})
+    //.to(".ray", { opacity:0, stagger: .10},"-=2.2")
+    .to("#yellow-ray-1", {
+        motionPath: {
+            path: "#YR1",
+            align: "#YR1",
+            alignOrigin: [0.5, 0.5],
+            autoRotate: true
+        },
+        duration: .10,
+        ease: "power1.Out"
+    })
     .to("#yellow-circle-2", { opacity:0, stagger: .3})
     .to("#sun-stroke-outline", { duration:.3, scale: 1, strokeWidth:15})
     return tl;
@@ -144,6 +180,12 @@ function bird(){
     return tl;
 }
 
+//function PreloaderDone (){
+    //const tl=gsap.timeline();
+   // window.scrollTo(0,0)
+  //  gsap.quickSetter("#preloader", {display:"none"})
+   // return tl;
+//}
 
 
 
@@ -178,15 +220,18 @@ function bird(){
     //.from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'});
   
     
+    mainTL.add(shark())
     mainTL.add(controller())
     mainTL.add(alternativelightsaber())
     mainTL.add(alternativelightsaberrotatingvertically())
     mainTL.add(lightsaber())
     mainTL.add(lightsaberbottombreakableparts())
-    //mainTL.add(wand())
+   // mainTL.add(wandwoglow())
     mainTL.add(sun())
     mainTL.add(arrow())
     mainTL.add(bird())
+    //mainTL.add(PreloaderDone())
+    
 
    
     

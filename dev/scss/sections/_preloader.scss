@@ -12,53 +12,23 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+           
             .hidden {
                 display: none;
             }
 
-            g {
 
-                #shark {
+            g {
+                #wand {
                     display: none;
                 }
-
                 #sun-ray-path {
                     display: none;
                 }
-                
-                //#controller {
-                    //display:none;
-                //}
-
-                //#alternativelightsaber{
-                   // display: none;
-                //}
-
-                //#lightsaber {
-                 //   display: none;
-                //}
-
-               #wand {
-                    display: none;
-                }
-
-                // #sun {
-                 //  display: none;
-                //}
-
-                //#arrow {
-                   // display: none;
-                //}
-
-                //#bird {
-                   // display: none;
-                //}
             }
-            
-            
-        }
+
 
     }
 
-
+    }
 }

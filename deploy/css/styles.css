@@ -522,13 +522,10 @@ header > div aside a {
 #preloader > div svg .hidden {
   display: none;
 }
-#preloader > div svg g #shark {
+#preloader > div svg g #wand {
   display: none;
 }
 #preloader > div svg g #sun-ray-path {
-  display: none;
-}
-#preloader > div svg g #wand {
   display: none;
 }
 
