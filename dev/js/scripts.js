@@ -6,6 +6,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
 gsap.set(".preloader-animation",{y: -200, scale: .70, transformOrigin:"center"});
+gsap.set("#shark",{ y: 300, transformOrigin:"center"});
 gsap.set(".waves",{ y: 120, scale: 2, transformOrigin:"center"});
 gsap.set("#first-wave",{ y: 130, transformOrigin:"center"});
 gsap.set("#shark-fin",{ y: 25, scale: 2});
@@ -13,9 +14,10 @@ gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
 gsap.set("#alternativelightsaber", {y: -245, scale: 2, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
-//gsap.set(".wandwoglow", {scale: 0, x: 3, y:-120, transformOrigin:"center"});
+gsap.set("#wand", {scale: .2, opacity: 0, y:-40, transformOrigin:"center"});
+gsap.set("#wand-path", {scale:.5, x: 100, y:-83, transformOrigin:"center"});
 gsap.set("#yellow-circle", {opacity: 0});
-gsap.set("#sun-ray-path", {scale: .70, y: -210, x: 10, rotate: -3,transformOrigin:"center"});
+gsap.set("#sun-ray-path", {scale: .70, y: -205, x: 10, rotate: -3,transformOrigin:"center"});
 gsap.set("#arrow", {x: 250, y: 130, opacity: 0, scale: 0, transformOrigin: "center"});
 gsap.set("#arrow-path", {x: 380, y: 140});
 
@@ -42,9 +44,6 @@ function shark(){
     .to("#shark", {duration: 1, opacity: 1}, "start")
     .to("#shark-fin", {duration: .2, x:100}, "start")
     .to("#shark", {duration: 1, scale: .086, y: -427, x: 11}, "start")
-   
-    
-  
     return tl; 
 }
 
@@ -118,23 +117,23 @@ function lightsaberbottombreakableparts(){
     const tl=gsap.timeline();
     
     tl.to(".light-saber", { opacity:0, duration: .15}, "sametime")
-    tl.to("#lightsaberbottompart1", {x:1040, stagger: .10}, "sametime")
+    .to("#lightsaberbottompart1", {x:1040, stagger: .10}, "sametime")
     .to("#lightsaberbottompart2", {x:-1040, stagger: .10})
     .to("#lightsaberbottompart3", {x:1040, stagger: .10})
     .to("#lightsaberbottompart4", {x:-1040, stagger: .10})
-    tl.from(".wand-wo-glow", { opacity:0}, "sametime")
-    //wand
-    //tl.to(".wand-wo-glow", { opacity:1, duration: .5}, "sametime")
-    //tl.from(".wand-wo-glow", { opacity:0}, "sametime")
-    //tl.to(".wand-wo-glow", { opacity:1, duration: .5}, "sametime")
+    .to("#wand", { opacity:1, scale: .2, y: -83}, "sametime")
+   
     return tl;
 }
 
-//function wandwoglow(){
-  //  const tl=gsap.timeline();
-  //  tl.to(".wandwoglow", { opacity:1, scale: .5})
-    //return tl;
-//}
+function wand(){
+    const tl=gsap.timeline();
+    tl.to("#yellow-circle", { opacity:1})
+    .from("#wand", {duration: 1, ease: "power2.out", motionPath:{path:"#wand-path", align:"#wand-path", alignOrigin: [0.5, 0.5]}}, "Same")
+    .to("#wand", {scale: .75, rotate: 35}, "Same")
+    return tl;
+    //tl.to("#wand", { opacity:1, scale: .5}, "sameTime")
+}
 
 
 
@@ -148,17 +147,7 @@ function sun(){
     .to("#sun-stroke-outline", { opacity:1, duration: .3})
     .from(".ray", { opacity:0, stagger: .10})
     .to(".ray", { opacity:1, stagger: .10})
-    //.to(".ray", { opacity:0, stagger: .10},"-=2.2")
-    .to("#yellow-ray-1", {
-        motionPath: {
-            path: "#YR1",
-            align: "#YR1",
-            alignOrigin: [0.5, 0.5],
-            autoRotate: true
-        },
-        duration: .10,
-        ease: "power1.Out"
-    })
+    .to(".ray", { opacity:0, stagger: .10},"-=2.2")
     .to("#yellow-circle-2", { opacity:0, stagger: .3})
     .to("#sun-stroke-outline", { duration:.3, scale: 1, strokeWidth:15})
     return tl;
@@ -226,7 +215,7 @@ function bird(){
     mainTL.add(alternativelightsaberrotatingvertically())
     mainTL.add(lightsaber())
     mainTL.add(lightsaberbottombreakableparts())
-   // mainTL.add(wandwoglow())
+    mainTL.add(wand())
     mainTL.add(sun())
     mainTL.add(arrow())
     mainTL.add(bird())
