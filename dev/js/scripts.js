@@ -15,7 +15,7 @@ gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
 gsap.set("#alternativelightsaber", {scale: 2, y: -245, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
-gsap.set("#wand", {scale: .2, opacity: 0, y:-100, transformOrigin:"center"});
+gsap.set("#wand", {scale: .2, opacity: 0, y:-80, transformOrigin:"center"});
 gsap.set("#wand-path", {scale:.5, x: 100, y:215, transformOrigin:"center"});
 gsap.set("#yellow-circle-2", {opacity: 0});
 gsap.set("#sun-ray-path", {scale: .70, y: -205, x: 10, rotate: -3,transformOrigin:"center"});
