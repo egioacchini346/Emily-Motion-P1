@@ -14,12 +14,11 @@ gsap.set("#shark-fin",{ y: 10, scale: 2});
 gsap.set("#shark-fin-2",{ y: 10, scale: 2, x: 60});
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
-gsap.set("#alternativelightsaber", {scale: 2, y: -245, transformOrigin:"center"});
+gsap.set("#alternativelightsaber", {scale: 2, y: -145, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
-gsap.set("#wand", {scale: .2, opacity: 0, y:-80, transformOrigin:"center"});
+gsap.set("#wand", {scale: 0, opacity: 0, y:-80, transformOrigin:"center"});
 gsap.set("#wand-path", {scale:.5, x: 100, y:215, transformOrigin:"center"});
 gsap.set("#yellow-circle-2", {opacity: 0});
-gsap.set("#sun-ray-path", {scale: .70, y: -205, x: 10, rotate: -3,transformOrigin:"center"});
 gsap.set("#arrow", {x: 250, y: 130, opacity: 0, scale: 0, transformOrigin: "center"});
 gsap.set("#arrow-path", {x: 380, y: 140});
 
@@ -86,10 +85,10 @@ function controller(){
 
 function alternativelightsaber(){
     const tl=gsap.timeline();
-    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10, scale:2 }, "same-time")
-    .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10, scale:2 },"same-time")
-    .from("#light-saber-bottom-part-1", {x:1040, stagger: .10, scale:2 },"same-time-2")
-    .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10, scale:2 },"same-time-2")
+    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10}, "same-time")
+    .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10},"same-time")
+    .from("#light-saber-bottom-part-1", {x:1040, stagger: .10},"same-time-2")
+    .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10},"same-time-2")
     .to("#red-button", { duration:.10, opacity: 0}) 
     return tl;
 }
@@ -124,8 +123,9 @@ function lightsaberbottombreakableparts(){
 
 function wand(){
     const tl=gsap.timeline();
-    tl.to("#wand", {duration: 1, ease: "power2.out", motionPath:{path:"#wand-path", align:"#wand-path", alignOrigin: [0.5, 0.5]}}, "Same")
-    .to("#wand", {scale: .75, rotate: 45}, "Same")
+   
+    tl.to("#wand", {scale: .75, rotate: 45}, "Same")
+    .to("#wand", {duration: 1, ease: "power2.out", motionPath:{path:"#wand-path", align:"#wand-path", alignOrigin: [0.5, 0.5]}}, "Same")
     .to("#yellow-circle-2", { opacity:1, duration: .15})
     .to("#yellow-circle-2", { opacity:.5, duration: .15})
     .to("#yellow-circle-2", { opacity:.1, duration: .15})
