@@ -14,7 +14,7 @@ gsap.set("#shark-fin",{ y: 10, scale: 2});
 gsap.set("#shark-fin-2",{ y: 10, scale: 2, x: 60});
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
-gsap.set("#alternativelightsaber", {scale: 2, y: -145, transformOrigin:"center"});
+gsap.set("#alternativelightsaber", {scale: 2, y: -70, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
 gsap.set("#wand", {scale: 0, opacity: 0, y:-80, transformOrigin:"center"});
 gsap.set("#wand-path", {scale:.5, x: 100, y:215, transformOrigin:"center"});
@@ -85,7 +85,7 @@ function controller(){
 
 function alternativelightsaber(){
     const tl=gsap.timeline();
-    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10}, "same-time")
+    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10, scale: 2}, "same-time")
     .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10},"same-time")
     .from("#light-saber-bottom-part-1", {x:1040, stagger: .10},"same-time-2")
     .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10},"same-time-2")
@@ -117,6 +117,7 @@ function lightsaberbottombreakableparts(){
     .to("#lightsaberbottompart2", {x:-1040, stagger: .10})
     .to("#lightsaberbottompart3", {x:1040, stagger: .10})
     .to("#lightsaberbottompart4", {x:-1040, stagger: .10})
+    .from("#wand", { opacity:0, scale:0 }, "sametime")
     .to("#wand", { opacity:1, scale:.2 }, "sametime")
     return tl;
 }
@@ -124,8 +125,7 @@ function lightsaberbottombreakableparts(){
 function wand(){
     const tl=gsap.timeline();
    
-    tl.to("#wand", {scale: .75, rotate: 45}, "Same")
-    .to("#wand", {duration: 1, ease: "power2.out", motionPath:{path:"#wand-path", align:"#wand-path", alignOrigin: [0.5, 0.5]}}, "Same")
+    tl.to("#wand", {scale: .75, rotate: 45, duration: 1, ease: "power2.out", motionPath:{path:"#wand-path", align:"#wand-path", alignOrigin: [0.5, 0.5]}})
     .to("#yellow-circle-2", { opacity:1, duration: .15})
     .to("#yellow-circle-2", { opacity:.5, duration: .15})
     .to("#yellow-circle-2", { opacity:.1, duration: .15})
@@ -188,25 +188,25 @@ function heroanimation (){
     .from("#h1", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
     .from("#h2", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
     .from("#pin", {duration:.75, y:"+=300", alpha:0, rotation:180}, "madeUp")
-    .from("#pin", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#pin", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
     .from("#h3", {duration:.75, alpha:0,y:1000})
     .from("#p", {duration:.75, alpha:0,y:1000})
-    .from("#b1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#b2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#b3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#b4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#b1", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#b2", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#b3", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#b4", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
     .from("#s1", {duration:.75, y:"+=300", alpha:0}, "madeUp")
     .from("#s2", {duration:.75, y:"+=300", alpha:0}, "madeUp")
     .from("#s3", {duration:.75, y:"+=300", alpha:0}, "madeUp")
     .from("#s4", {duration:.75, y:"+=300", alpha:0}, "madeUp")
     .from("#s5", {duration:.75, y:"+=300", alpha:0}, "madeUp")
     .from("#s6", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-    .from("#icon1, #n1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon2, #n2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon3, #n3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon4, #n4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon5, #n5", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    .from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#icon1, #n1", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#icon2, #n2", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#icon3, #n3", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#icon4, #n4", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#icon5, #n5", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
+    .from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: "bounce"})
     return tl; 
 }
     
