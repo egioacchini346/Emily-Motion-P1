@@ -151,7 +151,6 @@ function wand(){
     .to("#yellow-circle-2", { opacity:1}, "sametimesun")
     .to("#wand", {opacity: 0}, "sametimesun")
     return tl;
-    //tl.to("#wand", { opacity:1, scale: .5}, "sameTime")
 }
 
 
@@ -182,48 +181,50 @@ function arrow(){
 function bird(){
     const tl=gsap.timeline();
     tl.from("#bird", { opacity:0})
-    tl.to("#bird", { opacity:1, duration: .20})
+    tl.to("#bird", { opacity:1, duration: .20, onComplete: PreloaderDone})
     return tl;
 }
 
-//function PreloaderDone (){
-    //const tl=gsap.timeline();
-   // window.scrollTo(0,0)
-  //  gsap.quickSetter("#preloader", {display:"none"})
-   // return tl;
-//}
+function PreloaderDone() {
+     window.scrollTo(0,0)
+    gsap.set("#preloader", {display:"none"});
+}
 
 
 
 
-
-///mainTL.from("#hero", {duration:2, alpha:0})
- //   .from("#logo", {rotationX: 360,rotationY: 0, rotationZ:0})
-  //  .from("#li1", {duration:.75, alpha:0})
-  //  .from("#li2", {duration:.75, alpha:0})
-   // .from("#li3", {duration:.75, alpha:0})
-   // .from("#h1", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
-   // .from("#h2", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
-   // .from("#pin", {duration:.75, y:"+=300", alpha:0, rotation:180}, "madeUp")
-  //  .from("#pin", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-   // .from("#h3", {duration:.75, alpha:0,y:1000})
-  //  .from("#p", {duration:.75, alpha:0,y:1000})
-   // .from("#b1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-  //  .from("#b2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-   // .from("#b3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-  //  .from("#b4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-  //  .from("#s1", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-  //  .from("#s2", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-  //  .from("#s3", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-  //  .from("#s4", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-  //  .from("#s5", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-   // .from("#s6", {duration:.75, y:"+=300", alpha:0}, "madeUp")
-  //  .from("#icon1, #n1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-   // .from("#icon2, #n2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-   //.from("#icon3, #n3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-   // .from("#icon4, #n4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-   // .from("#icon5, #n5", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
-    //.from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'});
+function heroanimation (){
+    const tl=gsap.timeline();
+    tl.from("#hero", {duration:2, alpha:0})
+    .from("#logo", {rotationX: 360,rotationY: 0, rotationZ:0})
+    .from("#li1", {duration:.75, alpha:0})
+    .from("#li2", {duration:.75, alpha:0})
+    .from("#li3", {duration:.75, alpha:0})
+    .from("#h1", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
+    .from("#h2", {duration:.5, y:"+= 300", alpha:0, rotation:180},"madeUp")
+    .from("#pin", {duration:.75, y:"+=300", alpha:0, rotation:180}, "madeUp")
+    .from("#pin", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#h3", {duration:.75, alpha:0,y:1000})
+    .from("#p", {duration:.75, alpha:0,y:1000})
+    .from("#b1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#b2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#b3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#b4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#s1", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+    .from("#s2", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+    .from("#s3", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+    .from("#s4", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+    .from("#s5", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+    .from("#s6", {duration:.75, y:"+=300", alpha:0}, "madeUp")
+    .from("#icon1, #n1", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#icon2, #n2", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#icon3, #n3", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#icon4, #n4", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#icon5, #n5", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    .from("#icon6, #n6", {duration: .5, x: 3, scale: 1.5,ease: 'bounce'})
+    return tl; 
+}
+    
   
     
     mainTL.add(shark())
@@ -237,6 +238,8 @@ function bird(){
     mainTL.add(arrow())
     mainTL.add(bird())
     //mainTL.add(PreloaderDone())
+    mainTL.add(heroanimation())
+
     
 
    
