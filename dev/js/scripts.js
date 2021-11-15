@@ -14,7 +14,7 @@ gsap.set("#shark-fin",{ y: 10, scale: 2});
 gsap.set("#shark-fin-2",{ y: 10, scale: 2, x: 60});
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
-gsap.set("#alternativelightsaber", {scale: 2, y: -70, transformOrigin:"center"});
+gsap.set("#alternativelightsaber", {scale: 2, y: -245, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
 gsap.set("#wand", {scale: 0, opacity: 0, y:-80, transformOrigin:"center"});
 gsap.set("#wand-path", {scale:.5, x: 100, y:215, transformOrigin:"center"});
