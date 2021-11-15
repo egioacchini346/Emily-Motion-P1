@@ -6,7 +6,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
 gsap.set(".preloader-animation",{y: -200, scale: .70, transformOrigin:"center"});
-gsap.set("#shark",{ y: 300, transformOrigin:"center"});
+gsap.set("#shark",{ y: -10, transformOrigin:"center"});
 gsap.set(".waves",{ y: 120, scale: 2, transformOrigin:"center"});
 gsap.set("#first-wave",{ y: 130, transformOrigin:"center"});
 gsap.set("#shark-fin",{ y: 25, scale: 2});
@@ -14,9 +14,9 @@ gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
 gsap.set("#alternativelightsaber", {y: -245, scale: 2, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
-gsap.set("#wand", {scale: .2, opacity: 0, y:-40, transformOrigin:"center"});
-gsap.set("#wand-path", {scale:.5, x: 100, y:-83, transformOrigin:"center"});
-gsap.set("#yellow-circle", {opacity: 0});
+gsap.set("#wand", {scale: .2, opacity: 0, y:-100, transformOrigin:"center"});
+gsap.set("#wand-path", {scale:.5, x: 100, y:215, transformOrigin:"center"});
+gsap.set("#yellow-circle-2", {opacity: 0});
 gsap.set("#sun-ray-path", {scale: .70, y: -205, x: 10, rotate: -3,transformOrigin:"center"});
 gsap.set("#arrow", {x: 250, y: 130, opacity: 0, scale: 0, transformOrigin: "center"});
 gsap.set("#arrow-path", {x: 380, y: 140});
@@ -121,16 +121,33 @@ function lightsaberbottombreakableparts(){
     .to("#lightsaberbottompart2", {x:-1040, stagger: .10})
     .to("#lightsaberbottompart3", {x:1040, stagger: .10})
     .to("#lightsaberbottompart4", {x:-1040, stagger: .10})
-    .to("#wand", { opacity:1, scale: .2, y: -83}, "sametime")
+    .to("#wand", { opacity:1, scale: .2}, "sametime")
    
     return tl;
 }
 
 function wand(){
     const tl=gsap.timeline();
-    tl.to("#yellow-circle", { opacity:1})
-    .from("#wand", {duration: 1, ease: "power2.out", motionPath:{path:"#wand-path", align:"#wand-path", alignOrigin: [0.5, 0.5]}}, "Same")
-    .to("#wand", {scale: .75, rotate: 35}, "Same")
+    tl.to("#wand", {duration: 1, ease: "power2.out", motionPath:{path:"#wand-path", align:"#wand-path", alignOrigin: [0.5, 0.5]}}, "Same")
+    .to("#wand", {scale: .75, rotate: 45}, "Same")
+    .to("#yellow-circle-2", { opacity:1, duration: .15})
+    .to("#yellow-circle-2", { opacity:.5, duration: .15})
+    .to("#yellow-circle-2", { opacity:.1, duration: .15})
+    .to("#yellow-circle-2", { opacity:.3, duration: .15})
+    .to("#yellow-circle-2", { opacity:.7, duration: .15})
+    .to("#yellow-circle-2", { opacity:.4, duration: .15})
+    .to("#yellow-circle-2", { opacity:.5, duration: .15})
+    .to("#yellow-circle-2", { opacity:.1, duration: .15})
+    .to("#yellow-circle-2", { opacity:.3, duration: .15})
+    .to("#yellow-circle-2", { opacity:.7, duration: .15})
+    .to("#yellow-circle-2", { opacity:.4, duration: .15})
+    .to("#yellow-circle-2", { opacity:.5, duration: .15})
+    .to("#yellow-circle-2", { opacity:.1, duration: .15})
+    .to("#yellow-circle-2", { opacity:.3, duration: .15})
+    .to("#yellow-circle-2", { opacity:.7, duration: .15})
+    .to("#yellow-circle-2", { opacity:.4, duration: .15})
+    .to("#yellow-circle-2", { opacity:1}, "sametimesun")
+    .to("#wand", {opacity: 0}, "sametimesun")
     return tl;
     //tl.to("#wand", { opacity:1, scale: .5}, "sameTime")
 }
@@ -141,9 +158,7 @@ function wand(){
 
 function sun(){
     const tl=gsap.timeline();
-    tl.from("#yellow-circle-2", { opacity:0})
-    .to("#yellow-circle-2", { opacity:1, duration: .3})
-    .from("#sun-stroke-outline", { opacity:0})
+    tl.from("#sun-stroke-outline", { opacity:0})
     .to("#sun-stroke-outline", { opacity:1, duration: .3})
     .from(".ray", { opacity:0, stagger: .10})
     .to(".ray", { opacity:1, stagger: .10})
