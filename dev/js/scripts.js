@@ -6,13 +6,14 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
 gsap.set(".preloader-animation",{y: -200, scale: .70, transformOrigin:"center"});
-gsap.set("#shark",{ y: -10, transformOrigin:"center"});
+gsap.set("#shark",{ y: -220, transformOrigin:"center"});
 gsap.set(".waves",{ y: 120, scale: 2, transformOrigin:"center"});
 gsap.set("#first-wave",{ y: 130, transformOrigin:"center"});
-gsap.set("#shark-fin",{ y: 25, scale: 2});
+gsap.set("#shark-fin",{ y: 10, scale: 2});
+gsap.set("#shark-fin-2",{ y: 10, scale: 2, x: 60});
 gsap.set("#plus-button-2",{transformOrigin:"center"});
 gsap.set("#plus-button-shadow",{transformOrigin:"center"});
-gsap.set("#alternativelightsaber", {y: -245, scale: 2, transformOrigin:"center"});
+gsap.set("#alternativelightsaber", {scale: 2, y: -245, transformOrigin:"center"});
 gsap.set(".light-saber", {y: 35, transformOrigin:"center"});
 gsap.set("#wand", {scale: .2, opacity: 0, y:-100, transformOrigin:"center"});
 gsap.set("#wand-path", {scale:.5, x: 100, y:215, transformOrigin:"center"});
@@ -36,14 +37,15 @@ var bBoxGroup2 = secondwave.getBBox();
 
 function shark(){
     const tl=gsap.timeline();
-    tl.from ("#shark", {opacity: 0})
-    .to("#first-wave", {duration:.7, x: -bBoxGroup.width / 2, ease: "none", repeat:4}, "start")
-    .to("#second-wave", {duration: .7, x: bBoxGroup2.width / 2, ease: "none", repeat:5}, "start")
-    .to("#third-wave", {duration: .7, x: -bBoxGroup.width / 2, ease: "none", repeat:5}, "start")
-    .to("#fourth-wave",  {duration: .7, x: bBoxGroup2.width / 2, ease: "none", repeat:4}, "start")
+    tl.from ("#shark", {opacity: 0, duration: 1})
+    .to("#first-wave", {duration:.7, x: -bBoxGroup.width / 2, ease: "none", repeat:2}, "start")
+    .to("#second-wave", {duration: .5, x: bBoxGroup2.width / 2, ease: "none", repeat:3}, "start")
+    .to("#third-wave", {duration: .4, x: -bBoxGroup.width / 2, ease: "none", repeat:1}, "start")
+    .to("#fourth-wave",  {duration: .5, x: bBoxGroup2.width / 2, ease: "none", repeat:4}, "start")
     .to("#shark", {duration: 1, opacity: 1}, "start")
-    .to("#shark-fin", {duration: .2, x:100}, "start")
-    .to("#shark", {duration: 1, scale: .086, y: -427, x: 11}, "start")
+    .to("#shark-fin", {duration:.7, x:280}, "start")
+    .to("#shark-fin-2", {duration: .5, x:-500},"-=1.3")
+    .to("#shark", { scale: .086, y: -430, x: 11.5},"start")
     return tl; 
 }
 
@@ -88,10 +90,10 @@ function controller(){
 
 function alternativelightsaber(){
     const tl=gsap.timeline();
-    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10}, "same-time")
-    .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10},"same-time")
-    .from("#light-saber-bottom-part-1", {x:1040, stagger: .10},"same-time-2")
-    .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10},"same-time-2")
+    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10, scale: 2}, "same-time")
+    .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10, scale: 2},"same-time")
+    .from("#light-saber-bottom-part-1", {x:1040, stagger: .10, scale: 2},"same-time-2")
+    .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10, scale: 2},"same-time-2")
     .to("#red-button", { duration:.10, opacity: 0}) 
     return tl;
 }
@@ -121,7 +123,7 @@ function lightsaberbottombreakableparts(){
     .to("#lightsaberbottompart2", {x:-1040, stagger: .10})
     .to("#lightsaberbottompart3", {x:1040, stagger: .10})
     .to("#lightsaberbottompart4", {x:-1040, stagger: .10})
-    .to("#wand", { opacity:1, scale: .2}, "sametime")
+    .to("#wand", { opacity:1, scale:.2 }, "sametime")
    
     return tl;
 }
