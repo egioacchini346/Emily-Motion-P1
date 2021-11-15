@@ -5,6 +5,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin);
+
 gsap.set(".preloader-animation",{y: -200, scale: .70, transformOrigin:"center"});
 gsap.set("#shark",{ y: -220, transformOrigin:"center"});
 gsap.set(".waves",{ y: 120, scale: 2, transformOrigin:"center"});
@@ -25,10 +26,6 @@ gsap.set("#arrow-path", {x: 380, y: 140});
 
 const mainTL = gsap.timeline()
 
-// reference the timeline | Do we want to start at the beginning or the end of the timeline? | What thing do you want to annimate? | Duration of the animation? | What do we want to do?
-//const heroHeight = document.querySelector("#heroimg");
-
-//Const mainTime = 0.5;
 var firstwave = document.querySelector("#first-wave");
 var secondwave = document.querySelector("#second-wave");
 
@@ -154,9 +151,6 @@ function wand(){
 }
 
 
-
-
-
 function sun(){
     const tl=gsap.timeline();
     tl.from("#sun-stroke-outline", { opacity:0})
@@ -167,10 +161,7 @@ function sun(){
     .to("#yellow-circle-2", { opacity:0, stagger: .3})
     .to("#sun-stroke-outline", { duration:.3, scale: 1, strokeWidth:15})
     return tl;
-
-
 }
-
 
 function arrow(){
     const tl=gsap.timeline();
