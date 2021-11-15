@@ -81,16 +81,15 @@ function controller(){
     .to("#small-left-gray-button", {duration: .15, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"-=0.4")
     .to("#big-left-gray-button", {duration: .15, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"-=0.2")
     .to("#white-button", {duration: .15, scale: 0, ease: "power1.Out", stagger: {from: "edges", axis: "y"}},"-=0.0")
-   
     return tl;
 }
 
 function alternativelightsaber(){
     const tl=gsap.timeline();
-    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10, scale: 2}, "same-time")
-    .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10, scale: 2},"same-time")
-    .from("#light-saber-bottom-part-1", {x:1040, stagger: .10, scale: 2},"same-time-2")
-    .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10, scale: 2},"same-time-2")
+    tl.from("#light-saber-bottom-part-2", {x:1040, stagger: .10, scale:2 }, "same-time")
+    .from("#light-saber-bottom-part-3", {x:-1040, stagger: .10, scale:2 },"same-time")
+    .from("#light-saber-bottom-part-1", {x:1040, stagger: .10, scale:2 },"same-time-2")
+    .from("#light-saber-bottom-part-4", {x:-1040, stagger: .10, scale:2 },"same-time-2")
     .to("#red-button", { duration:.10, opacity: 0}) 
     return tl;
 }
@@ -101,7 +100,6 @@ function alternativelightsaberrotatingvertically(){
     .from("#lightsaberbottombreakableparts", { opacity:0})
     .to("#lightsaberbottombreakableparts", { opacity:1, duration: .10})
     .to("#alternativelightsaber", {opacity: 0},"-=.38")
-   
     return tl;
 }
 
@@ -121,7 +119,6 @@ function lightsaberbottombreakableparts(){
     .to("#lightsaberbottompart3", {x:1040, stagger: .10})
     .to("#lightsaberbottompart4", {x:-1040, stagger: .10})
     .to("#wand", { opacity:1, scale:.2 }, "sametime")
-   
     return tl;
 }
 
@@ -177,12 +174,9 @@ function bird(){
 }
 
 function PreloaderDone() {
-     window.scrollTo(0,0)
+    window.scrollTo(0,0)
     gsap.set("#preloader", {display:"none"});
 }
-
-
-
 
 function heroanimation (){
     const tl=gsap.timeline();
@@ -216,8 +210,6 @@ function heroanimation (){
     return tl; 
 }
     
-  
-    
     mainTL.add(shark())
     mainTL.add(controller())
     mainTL.add(alternativelightsaber())
@@ -228,14 +220,8 @@ function heroanimation (){
     mainTL.add(sun())
     mainTL.add(arrow())
     mainTL.add(bird())
-    //mainTL.add(PreloaderDone())
     mainTL.add(heroanimation())
 
-    
-
-   
-    
-    
     
 GSDevTools.create();
 MotionPathPlugin.create();

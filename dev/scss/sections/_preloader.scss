@@ -1,7 +1,7 @@
 #preloader {
 
     position: absolute;
-    
+
     width: 100%;
     z-index: 1000;
 
@@ -12,21 +12,13 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-           
+
             .hidden {
                 display: none;
             }
 
 
-            g {
-                
-                #sun-ray-path {
-                    display: none;
-                }
-            }
-
-
-    }
+        }
 
     }
 }
