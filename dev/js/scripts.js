@@ -8,27 +8,19 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin, MorphSVGPlugin);
 
 gsap.set("#card",{ scale: .7, transformOrigin:"center"});
-gsap.set(".window",{ opacity: 0, transformOrigin:"center"});
-gsap.set(".house",{ opacity: 0, transformOrigin:"center"});
-gsap.set("#Frame-5",{ opacity: 0, transformOrigin:"center"});
-gsap.set(".green",{ scale: 8, transformOrigin:"center"});
 gsap.set(".colleges",{ opacity: 0, transformOrigin:"center"});
 //gsap.set("#Frame-14",{ opacity:0, transformOrigin:"center"});
 
 
 const mainTL = gsap.timeline()
 
-function window1(){
+function windowscene(){
     const tl=gsap.timeline();
-    tl.to(".window",{ opacity: 1, duration: 2})
-    tl.to(".house",{ opacity: 1, duration: .7},"sameTime")
-    tl.from("#snow-top-right-window",{ opacity: 0, duration: .7},"sameTime")
-    tl.to(".sky-tint",{ opacity: 0, duration: .5})
-    tl.to("#Frame-6",{ duration: .5})
+    
     
     return tl;
 }
-function frame14(){
+function cabinscene(){
     const tl=gsap.timeline();
 
     tl.to("#animation",{duration: .3, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
@@ -59,8 +51,8 @@ function frame14(){
     tl.to("#urbanstrategy",{duration: .3, opacity: 1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     return tl;
 }
-mainTL.add(window1())
-mainTL.add(frame14())
+mainTL.add(windowscene())
+mainTL.add(cabinscene())
 
 GSDevTools.create();
 MotionPathPlugin.create();
