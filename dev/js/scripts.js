@@ -7,9 +7,9 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(GSDevTools, MotionPathPlugin, DrawSVGPlugin, MorphSVGPlugin);
 
-gsap.set("#card",{ scale: .7, transformOrigin:"center"});
+gsap.set("#card",{ scale: .85, transformOrigin:"center"});
 gsap.set(".colleges",{ opacity: 0, transformOrigin:"center"});
-//gsap.set("#Frame-14",{ opacity:0, transformOrigin:"center"});
+
 
 
 const mainTL = gsap.timeline()
