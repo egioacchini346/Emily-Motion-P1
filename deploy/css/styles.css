@@ -472,7 +472,7 @@ nav ul li a:visited {
 nav ul li a:link:hover, nav ul li a:link:active,
 nav ul li a:visited:hover,
 nav ul li a:visited:active {
-  color: #8F9F67;
+  color: #A0B385;
 }
 
 /* =============
@@ -501,6 +501,7 @@ header > div aside a {
 ============= */
 #card {
   position: absolute;
+  background-color: #A0B385;
   width: 100%;
   z-index: 1000;
 }

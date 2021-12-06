@@ -1,12 +1,13 @@
 #card {
 
     position: absolute;
+    background-color: #A0B385;
 
     width: 100%;
     z-index: 1000;
 
     >div {
-
+    
         svg {
             position: absolute;
             justify-content: center;
