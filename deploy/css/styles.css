@@ -510,51 +510,12 @@ header > div aside a {
   align-items: center;
   width: 100%;
 }
-#card > div svg #Frame-15 {
+#card > div svg g #window-scene {
   display: none;
 }
-#card > div svg #Frame-15-2 {
+#card > div svg g #cabin-scene_2 {
   display: none;
 }
-#card > div svg #Frame-16 {
-  display: none;
-}
-#card > div svg #Frame-17 {
-  display: none;
-}
-#card > div svg #Frame-20 {
-  display: none;
-}
-#card > div svg #Frame-21 {
-  display: none;
-}
-#card > div svg #Frame-24 {
-  display: none;
-}
-#card > div svg #Frame-25 {
-  display: none;
-}
-#card > div svg #Frame-26 {
-  display: none;
-}
-#card > div svg #Frame-27 {
-  display: none;
-}
-#card > div svg #Frame-28 {
-  display: none;
-}
-#card > div svg #Frame-29 {
-  display: none;
-}
-#card > div svg #Frame-30 {
-  display: none;
-}
-#card > div svg #Frame-31 {
-  display: none;
-}
-#card > div svg #Frame-32 {
-  display: none;
-}
-#card > div svg #Frame-34 {
+#card > div svg g #cabin-scene {
   display: none;
 }
