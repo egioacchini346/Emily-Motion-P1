@@ -68,7 +68,6 @@ function fireplacescene(){
     tl.from("#30", {duration: .15, scale: .1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     tl.from("#31", {duration: .15, scale: .1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
     tl.from("#32", {duration: .15, scale: .1, ease: "power1.In", stagger: {from: "edges", axis: "y"}})
-    //tl.to(cs, 0.6, {tint: 0x228200, ease: Power4.easeOut})
     return tl;
 }
 

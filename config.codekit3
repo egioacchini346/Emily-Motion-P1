@@ -40,16 +40,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/animation.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/animation.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/design\/card.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -72,7 +62,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/content\/card.html",
       "oF" : 0
     },
@@ -272,21 +262,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_animation.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_animation.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/scss\/sections\/_card.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -389,7 +364,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 654453556.59066701,
-    "displayValue" : "Emily-Motion-P1",
+    "displayValue" : "Emily-Motion-P1-copy",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-silver",
     "iconImageWasSetByUser" : 0
@@ -894,7 +869,7 @@
       },
       "class-methods-use-this" : {
         "active" : 0,
-        "optionString" : "{'exceptMethods': [], 'enforceForClassFields': true}"
+        "optionString" : "{'exceptMethods': []}"
       },
       "comma-dangle" : {
         "active" : 1,
@@ -1055,7 +1030,7 @@
       },
       "max-classes-per-file" : {
         "active" : 0,
-        "optionString" : "{'ignoreExpressions': false, 'max': 1}"
+        "optionString" : "1"
       },
       "max-depth" : {
         "active" : 0,
